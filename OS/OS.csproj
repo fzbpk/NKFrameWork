@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F812052E-98EA-4B69-ABEC-3F41845E87A4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OS</RootNamespace>
+    <AssemblyName>OS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Enum\Const.cs" />
+    <Compile Include="Enum\DiskFormatType.cs" />
+    <Compile Include="Enum\DisplayDeviceStateFlags.cs" />
+    <Compile Include="Enum\OSVers.cs" />
+    <Compile Include="Enum\SYSMessage.cs" />
+    <Compile Include="Hardware\Display.cs" />
+    <Compile Include="Hardware\MainBoard.cs" />
+    <Compile Include="Hardware\Modem.cs" />
+    <Compile Include="Hardware\Network.cs" />
+    <Compile Include="Hardware\Sound.cs" />
+    <Compile Include="Hardware\Storage.cs" />
+    <Compile Include="Helper\APIHelper.cs" />
+    <Compile Include="Helper\OSHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Software\Account.cs" />
+    <Compile Include="Software\DLLLoader.cs" />
+    <Compile Include="Software\Hook.cs" />
+    <Compile Include="Software\OS.cs" />
+    <Compile Include="Software\Process32.cs" />
+    <Compile Include="Software\Regedit.cs" />
+    <Compile Include="Software\System32.cs" />
+    <Compile Include="Structure\DEVMODE.cs" />
+    <Compile Include="Structure\DISPLAY_DEVICE.cs" />
+    <Compile Include="Structure\LUID.cs" />
+    <Compile Include="Structure\LUID_AND_ATTRIBUTES.cs" />
+    <Compile Include="Structure\MEMORYSTATUS.cs" />
+    <Compile Include="Structure\MIXERCAPS.cs" />
+    <Compile Include="Structure\MIXERCONTROL.cs" />
+    <Compile Include="Structure\MIXERCONTROLDETAILS.cs" />
+    <Compile Include="Structure\MIXERCONTROLDETAILS_UNSIGNED.cs" />
+    <Compile Include="Structure\MIXERLINE.cs" />
+    <Compile Include="Structure\MIXERLINECONTROLS.cs" />
+    <Compile Include="Structure\RAMP.cs" />
+    <Compile Include="Structure\SYSTEMTIME.cs" />
+    <Compile Include="Structure\SYSTEM_POWER_STATUS.cs" />
+    <Compile Include="Structure\TOKEN_PRIVILEGES.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

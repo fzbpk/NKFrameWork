@@ -1,0 +1,11 @@
+J:\Project\DotNet\NKFrameWork\OS\bin\Debug\OS.dll
+J:\Project\DotNet\NKFrameWork\OS\bin\Debug\OS.pdb
+J:\Project\DotNet\NKFrameWork\OS\obj\Debug\OS.csprojResolveAssemblyReference.cache
+J:\Project\DotNet\NKFrameWork\OS\obj\Debug\OS.dll
+J:\Project\DotNet\NKFrameWork\OS\obj\Debug\OS.pdb
+F:\Project\DotNet\NKFrameWork\OS\bin\Debug\OS.dll
+F:\Project\DotNet\NKFrameWork\OS\bin\Debug\OS.pdb
+F:\Project\DotNet\NKFrameWork\OS\obj\Debug\OS.csprojAssemblyReference.cache
+F:\Project\DotNet\NKFrameWork\OS\obj\Debug\OS.csproj.CoreCompileInputs.cache
+F:\Project\DotNet\NKFrameWork\OS\obj\Debug\OS.dll
+F:\Project\DotNet\NKFrameWork\OS\obj\Debug\OS.pdb

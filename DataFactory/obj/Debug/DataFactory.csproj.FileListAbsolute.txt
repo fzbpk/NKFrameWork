@@ -1,0 +1,93 @@
+J:\Project\DotNet\CHMonter\DataFactory\bin\Debug\DataFactory.dll
+J:\Project\DotNet\CHMonter\DataFactory\bin\Debug\DataFactory.pdb
+J:\Project\DotNet\CHMonter\DataFactory\bin\Debug\DataDriver.dll
+J:\Project\DotNet\CHMonter\DataFactory\bin\Debug\MySql.Data.dll
+J:\Project\DotNet\CHMonter\DataFactory\bin\Debug\DataDriver.pdb
+J:\Project\DotNet\CHMonter\DataFactory\bin\Debug\DataDriver.xml
+J:\Project\DotNet\CHMonter\DataFactory\obj\Debug\DataFactory.csprojResolveAssemblyReference.cache
+J:\Project\DotNet\CHMonter\DataFactory\obj\Debug\DataFactory.dll
+J:\Project\DotNet\CHMonter\DataFactory\obj\Debug\DataFactory.pdb
+H:\Project\Visual Studio 2013\Projects\CommClass\DataFactory\obj\Debug\DataFactory.csprojResolveAssemblyReference.cache
+H:\Project\Visual Studio 2013\Projects\CommClass\DataFactory\obj\Debug\DataFactory.dll
+H:\Project\Visual Studio 2013\Projects\CommClass\DataFactory\bin\Debug\DataFactory.dll
+H:\Project\Visual Studio 2013\Projects\CommClass\DataFactory\bin\Debug\DataFactory.pdb
+H:\Project\Visual Studio 2013\Projects\CommClass\DataFactory\bin\Debug\DataDriver.dll
+H:\Project\Visual Studio 2013\Projects\CommClass\DataFactory\bin\Debug\MySql.Data.dll
+H:\Project\Visual Studio 2013\Projects\CommClass\DataFactory\bin\Debug\DataDriver.pdb
+H:\Project\Visual Studio 2013\Projects\CommClass\DataFactory\bin\Debug\DataDriver.xml
+H:\Project\Visual Studio 2013\Projects\CommClass\DataFactory\obj\Debug\DataFactory.pdb
+J:\Project\DotNet\CommClass\DataFactory\bin\Debug\DataFactory.dll.config
+J:\Project\DotNet\CommClass\DataFactory\bin\Debug\DataFactory.XML
+J:\Project\DotNet\CommClass\DataFactory\bin\Debug\DataFactory.dll
+J:\Project\DotNet\CommClass\DataFactory\bin\Debug\DataFactory.pdb
+J:\Project\DotNet\CommClass\DataFactory\bin\Debug\DataDriver.dll
+J:\Project\DotNet\CommClass\DataFactory\bin\Debug\linq2db.dll
+J:\Project\DotNet\CommClass\DataFactory\bin\Debug\MySql.Data.dll
+J:\Project\DotNet\CommClass\DataFactory\bin\Debug\Oracle.DataAccess.dll
+J:\Project\DotNet\CommClass\DataFactory\bin\Debug\System.Data.SQLite.dll
+J:\Project\DotNet\CommClass\DataFactory\bin\Debug\DataDriver.pdb
+J:\Project\DotNet\CommClass\DataFactory\bin\Debug\DataDriver.xml
+J:\Project\DotNet\CommClass\DataFactory\bin\Debug\linq2db.pdb
+J:\Project\DotNet\CommClass\DataFactory\obj\Debug\DataFactory.csprojResolveAssemblyReference.cache
+J:\Project\DotNet\CommClass\DataFactory\obj\Debug\DataFactory.dll
+J:\Project\DotNet\CommClass\DataFactory\obj\Debug\DataFactory.pdb
+J:\Project\DotNet\CommClass\DataFactory\bin\Debug\Npgsql.dll
+H:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\DataFactory.dll.config
+H:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\DataFactory.XML
+H:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\DataFactory.dll
+H:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\DataFactory.pdb
+H:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\linq2db.dll
+H:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\MySql.Data.dll
+H:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\NKComm.dll
+H:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\NKData.dll
+H:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\Npgsql.dll
+H:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\Oracle.ManagedDataAccess.dll
+H:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\System.Data.SQLite.dll
+H:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\NKComm.pdb
+H:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\NKComm.xml
+H:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\NKData.pdb
+H:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\NKData.xml
+H:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\linq2db.pdb
+H:\Project\DotNet\NKFrameWork\DataFactory\obj\Debug\DataFactory.csprojResolveAssemblyReference.cache
+H:\Project\DotNet\NKFrameWork\DataFactory\obj\Debug\DataFactory.dll
+H:\Project\DotNet\NKFrameWork\DataFactory\obj\Debug\DataFactory.pdb
+J:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\DataFactory.dll.config
+J:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\DataFactory.XML
+J:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\DataFactory.dll
+J:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\DataFactory.pdb
+J:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\linq2db.dll
+J:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\MySql.Data.dll
+J:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\NKComm.dll
+J:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\NKData.dll
+J:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\Npgsql.dll
+J:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\Oracle.ManagedDataAccess.dll
+J:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\System.Data.SQLite.dll
+J:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\NKComm.pdb
+J:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\NKComm.xml
+J:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\NKData.pdb
+J:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\NKData.xml
+J:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\linq2db.pdb
+J:\Project\DotNet\NKFrameWork\DataFactory\obj\Debug\DataFactory.csprojResolveAssemblyReference.cache
+J:\Project\DotNet\NKFrameWork\DataFactory\obj\Debug\DataFactory.dll
+J:\Project\DotNet\NKFrameWork\DataFactory\obj\Debug\DataFactory.pdb
+F:\Project\DotNet\NKFrameWork\DataFactory\obj\Debug\DataFactory.csprojAssemblyReference.cache
+F:\Project\DotNet\NKFrameWork\DataFactory\obj\Debug\DataFactory.csproj.CoreCompileInputs.cache
+F:\Project\DotNet\NKFrameWork\DataFactory\obj\Debug\DataFactory.dll
+F:\Project\DotNet\NKFrameWork\DataFactory\obj\Debug\DataFactory.pdb
+F:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\DataFactory.dll.config
+F:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\DataFactory.XML
+F:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\DataFactory.dll
+F:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\DataFactory.pdb
+F:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\linq2db.dll
+F:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\MySql.Data.dll
+F:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\NKComm.dll
+F:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\NKData.dll
+F:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\Npgsql.dll
+F:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\Oracle.ManagedDataAccess.dll
+F:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\System.Data.SQLite.dll
+F:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\NKComm.pdb
+F:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\NKComm.xml
+F:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\NKData.pdb
+F:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\NKData.xml
+F:\Project\DotNet\NKFrameWork\DataFactory\bin\Debug\linq2db.pdb
+F:\Project\DotNet\NKFrameWork\DataFactory\obj\Debug\DataFactory.csproj.CopyComplete

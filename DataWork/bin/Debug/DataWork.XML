@@ -1,0 +1,335 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DataWork</name>
+    </assembly>
+    <members>
+        <member name="T:NK.DataWork.Excel">
+            <summary>
+            Excel处理类
+            </summary>
+        </member>
+        <member name="P:NK.DataWork.Excel.FilePath">
+            <summary>
+            文件位置
+            </summary>
+        </member>
+        <member name="M:NK.DataWork.Excel.ToDataTable(System.Boolean)">
+            <summary>
+            转DataTable
+            </summary>
+            <param name="isColumnName">第一行是否表头</param>
+            <returns>DataTable</returns>
+        </member>
+        <member name="M:NK.DataWork.Excel.DataTableToExcel(System.Data.DataTable)">
+            <summary>
+            转Excel
+            </summary>
+            <param name="dt">数据</param> 
+            <returns>Excel</returns>
+        </member>
+        <member name="T:NK.DataWork.CheckSum">
+            <summary>
+            校验类
+            </summary>
+        </member>
+        <member name="M:NK.DataWork.CheckSum.CRC16(System.Byte[],System.UInt16)">
+            <summary>
+            CRC16 
+            </summary>
+            <param name="data">校验数据</param>
+            <param name="key">多项式</param>
+            <returns>校验码</returns>
+        </member>
+        <member name="M:NK.DataWork.CheckSum.CRC8(System.Byte[],System.Byte)">
+            <summary>
+            CRC8
+            </summary>
+            <param name="data">校验数据</param>
+            <param name="key">多项式</param>
+            <returns>校验码</returns>
+        </member>
+        <member name="M:NK.DataWork.CheckSum.CRC32(System.Byte[],System.UInt32)">
+            <summary>
+            CRC32
+            </summary>
+            <param name="data">校验数据</param>
+            <param name="key">多项式</param>
+            <returns>校验码</returns>
+        </member>
+        <member name="M:NK.DataWork.CheckSum.CRC32File(System.String,System.Int32)">
+            <summary>
+            文件CRC32
+            </summary>
+            <param name="FilePath">文件路径</param>
+            <param name="BufferSize">缓存大小</param>
+            <returns>CRC值</returns>
+        </member>
+        <member name="M:NK.DataWork.CheckSum.Xor(System.Byte[])">
+            <summary>
+            异或
+            </summary>
+            <param name="data">校验数据</param>
+            <returns>校验码</returns>
+        </member>
+        <member name="M:NK.DataWork.CheckSum.And(System.Byte[])">
+            <summary>
+            校验和
+            </summary>
+            <param name="bytes">校验数组</param>
+            <returns>校验码</returns>
+        </member>
+        <member name="T:NK.DataWork.CODEC">
+            <summary>
+            图形码
+            </summary>
+        </member>
+        <member name="M:NK.DataWork.CODEC.Decode(System.Drawing.Image,System.String@,System.String@)">
+            <summary>
+            图形码解码
+            </summary>
+            <param name="img">图形</param>
+            <param name="BarcodeFormat">返回图形码类型</param>
+            <param name="Code">原始数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.DataWork.CODEC.EncodeQRCode(System.String,System.Int32,System.Int32)">
+            <summary>
+            生成二维码
+            </summary>
+            <param name="Code">原始数据</param>
+            <param name="Width">图片宽度</param>
+            <param name="Height">图片高度</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.DataWork.CODEC.EncodeBarCode(System.String,System.Int32,System.Int32)">
+            <summary>
+            条形码
+            </summary>
+            <param name="Code">原始数据</param>
+            <param name="Width">图形宽度</param>
+            <param name="Height">图形高度</param>
+            <returns></returns>
+        </member>
+        <member name="T:NK.DataWork.Security">
+            <summary>
+            加解密
+            </summary>
+        </member>
+        <member name="M:NK.DataWork.Security.MD5(System.String,System.String,System.Text.Encoding)">
+            <summary>
+            MD5加密
+            </summary>
+            <param name="code">被加密字符串</param>
+            <param name="Key">密匙</param>
+            <returns>加密字符串</returns>
+        </member>
+        <member name="M:NK.DataWork.Security.AesEncrypt(System.Byte[],System.Byte[],System.Byte[])">
+            <summary>
+            AES加密
+            </summary>
+            <param name="Data">原始数据</param>
+            <param name="Key">密匙</param>
+            <param name="IV">IV密匙</param> 
+            <returns></returns>
+        </member>
+        <member name="M:NK.DataWork.Security.AesEncrypt(System.String,System.String,System.String,System.Text.Encoding)">
+            <summary>
+            AES加密
+            </summary>
+            <param name="Data">原始数据</param>
+            <param name="Key">密匙</param>
+            <param name="IV">IV密匙</param> 
+            <param name="CharSet">编码</param> 
+            <returns></returns>
+        </member>
+        <member name="M:NK.DataWork.Security.AesDecrypt(System.Byte[],System.Byte[],System.Byte[])">
+            <summary>
+            AES解密
+            </summary>
+            <param name="Data">加密数据</param>
+            <param name="Key">密匙</param>
+            <param name="IV">IV密匙</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.DataWork.Security.AesDecrypt(System.String,System.String,System.String,System.Text.Encoding)">
+            <summary>
+            AES解密
+            </summary>
+            <param name="Data">加密数据</param>
+            <param name="Key">密匙</param>
+            <param name="IV">IV密匙</param>
+            <param name="CharSet">编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.DataWork.Security.TripeDesEncrypt(System.Byte[],System.Byte[],System.Byte[],System.Security.Cryptography.CipherMode,System.Security.Cryptography.PaddingMode)">
+            <summary>
+            TripeDes加密
+            </summary>
+            <param name="Data">原始数据</param>
+            <param name="Key">密匙</param>
+            <param name="IV">IV密匙</param> 
+            <param name="mode">块密码模式</param>
+            <param name="type">填充</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.DataWork.Security.TripeDesEncrypt(System.String,System.String,System.String,System.Security.Cryptography.CipherMode,System.Security.Cryptography.PaddingMode,System.Text.Encoding)">
+            <summary>
+            TripeDes加密
+            </summary>
+            <param name="Data">原始数据</param>
+            <param name="Key">密匙</param>
+            <param name="IV">IV密匙</param> 
+            <param name="mode">块密码模式</param>
+            <param name="type">填充</param>
+            <param name="CharSet">编码</param> 
+            <returns></returns>
+        </member>
+        <member name="M:NK.DataWork.Security.TripeDesDecrypt(System.Byte[],System.Byte[],System.Byte[],System.Security.Cryptography.CipherMode,System.Security.Cryptography.PaddingMode)">
+            <summary>
+            TripeDes解密
+            </summary>
+            <param name="Data">加密数据</param>
+            <param name="Key">密匙</param>
+            <param name="IV">IV密匙</param>
+            <param name="mode">块密码模式</param>
+            <param name="type">填充</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.DataWork.Security.TripeDesDecrypt(System.String,System.String,System.String,System.Security.Cryptography.CipherMode,System.Security.Cryptography.PaddingMode,System.Text.Encoding)">
+            <summary>
+            TripeDes解密
+            </summary>
+            <param name="Data">加密数据</param>
+            <param name="Key">密匙</param>
+            <param name="IV">IV密匙</param>
+            <param name="mode">块密码模式</param>
+            <param name="type">填充</param>
+            <param name="CharSet">编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.DataWork.Security.DesEncrypt(System.Byte[],System.Byte[],System.Byte[])">
+            <summary>
+            DES加密
+            </summary>
+            <param name="Data">原始数据</param>
+            <param name="Key">密匙</param>
+            <param name="IV">IV密匙</param> 
+            <returns></returns>
+        </member>
+        <member name="M:NK.DataWork.Security.DesEncrypt(System.String,System.String,System.String,System.Text.Encoding)">
+            <summary>
+            Des加密
+            </summary>
+            <param name="Data">原始数据</param>
+            <param name="Key">密匙</param>
+            <param name="IV">IV密匙</param> 
+            <param name="CharSet">编码</param> 
+            <returns></returns>
+        </member>
+        <member name="M:NK.DataWork.Security.DesDecrypt(System.Byte[],System.Byte[],System.Byte[])">
+            <summary>
+            DES解密
+            </summary>
+            <param name="Data">加密数据</param>
+            <param name="Key">密匙</param>
+            <param name="IV">IV密匙</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.DataWork.Security.DesDecrypt(System.String,System.String,System.String,System.Text.Encoding)">
+            <summary>
+            DES解密
+            </summary>
+            <param name="Data">加密数据</param>
+            <param name="Key">密匙</param>
+            <param name="IV">IV密匙</param>
+            <param name="CharSet">编码</param>
+            <returns></returns>
+        </member>
+        <member name="T:NK.Compress.GZIP">
+            <summary>
+            GZIP压缩解压
+            </summary>
+        </member>
+        <member name="P:NK.Compress.GZIP.Err">
+            <summary>
+            获取错误信息
+            </summary>
+        </member>
+        <member name="M:NK.Compress.GZIP.ZipPath(System.String,System.String,System.String,System.String)">
+            <summary>
+            压缩文件夹
+            </summary>
+            <param name="OrgPath">源文件夹</param>
+            <param name="DestPath">目标文件夹</param>
+            <param name="FileName">文件名</param>
+            <param name="Password">密码</param>
+            <returns>执行结果</returns>
+        </member>
+        <member name="M:NK.Compress.GZIP.ZipCurPath(System.String,System.String,System.String,System.String)">
+            <summary>
+            压缩当前文件夹
+            </summary>
+            <param name="OrgPath">源文件夹</param>
+            <param name="DestPath">目标文件夹</param>
+            <param name="FileName">文件名</param>
+            <param name="Password">密码</param>
+            <returns>执行结果</returns>
+        </member>
+        <member name="M:NK.Compress.GZIP.ZipFile(System.String,System.String,System.String)">
+            <summary>
+            压缩单个文件
+            </summary>
+            <param name="FileToZip">源文件</param>
+            <param name="ZipedFile">目标文件</param>
+            <param name="Password">密码</param>
+            <returns>执行结果</returns>
+        </member>
+        <member name="M:NK.Compress.GZIP.UnZip(System.String,System.String,System.String)">
+            <summary>
+            解压缩
+            </summary>
+            <param name="OrgFile">ZIP文件</param>
+            <param name="DestPath">目标文件夹</param>
+            <param name="Password">密码</param>
+            <returns>执行结果</returns>
+        </member>
+        <member name="M:NK.Compress.GZIP.UnZipFile(System.String,System.String,NK.Compress.GZIP.EntryContent,System.String)">
+            <summary>
+            解压缩单个文件
+            </summary>
+            <param name="OrgFile">zip文件</param>
+            <param name="DestPath">目标文件夹</param>
+            <param name="Entry">要解压的文件信息</param>
+            <param name="Password">密码</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Compress.GZIP.ZipContent(System.String,System.String,System.String)">
+            <summary>
+            获取ZIP文件下所有文件信息
+            </summary>
+            <param name="OrgFile">zip文件</param>
+            <param name="Password">密码</param>
+            <param name="Key">搜索条件</param>
+            <returns>文件信息</returns>
+        </member>
+        <member name="M:NK.Compress.GZIP.ZipFileList(System.String,System.String,System.String)">
+            <summary>
+            获取ZIP文件下文件信息
+            </summary>
+            <param name="OrgFile">zip文件</param>
+            <param name="Password">密码</param>
+            <param name="Key">搜索条件</param>
+            <returns>文件信息</returns>
+        </member>
+        <member name="M:NK.Compress.GZIP.ZipDirectoryList(System.String,System.String,System.String)">
+            <summary>
+            获取ZIP文件下所有目录信息
+            </summary>
+            <param name="OrgFile">zip文件</param>
+            <param name="Password">密码</param>
+            <param name="Key">搜索条件</param>
+            <returns>目录信息</returns>
+        </member>
+    </members>
+</doc>

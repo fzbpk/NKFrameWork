@@ -1,0 +1,441 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Identification</name>
+    </assembly>
+    <members>
+        <member name="T:NK.Identification.AuthDriver">
+            <summary>
+            认证信息基类
+            </summary>
+        </member>
+        <member name="M:NK.Identification.AuthDriver.#ctor(System.IO.FileInfo)">
+            <summary>
+            人面识别驱动
+            </summary>
+            <param name="FilePath">DLL路径</param>
+        </member>
+        <member name="M:NK.Identification.AuthDriver.#ctor(System.String)">
+            <summary>
+            人面识别驱动
+            </summary>
+            <param name="FilePath">DLL路径</param>
+        </member>
+        <member name="M:NK.Identification.AuthDriver.#ctor(System.Type)">
+            <summary>
+            人面识别驱动
+            </summary>
+            <param name="Server"></param>
+        </member>
+        <member name="M:NK.Identification.AuthDriver.Finalize">
+            <summary>
+            驱动信息获取
+            </summary>
+        </member>
+        <member name="M:NK.Identification.AuthDriver.Dispose">
+            <summary>
+            释放资源
+            </summary>
+        </member>
+        <member name="M:NK.Identification.AuthDriver.Dispose(System.Boolean)">
+            <summary>
+            释放连接
+            </summary>
+            <param name="disposing">是否释放</param>
+        </member>
+        <member name="M:NK.Identification.AuthDriver.dispose">
+            <summary>
+            重载释放类
+            </summary>
+        </member>
+        <member name="T:NK.Identification.CardDriver">
+            <summary>
+            读卡器驱动
+            </summary>
+        </member>
+        <member name="M:NK.Identification.CardDriver.#ctor(System.String,System.String)">
+            <summary>
+            读卡器驱动
+            </summary>
+            <param name="FilePath">DLL路径</param>
+            <param name="ClassFullName">类名</param>
+        </member>
+        <member name="M:NK.Identification.CardDriver.#ctor(System.IO.FileInfo,System.String)">
+            <summary>
+            读卡器驱动
+            </summary>
+            <param name="FilePath">DLL路径</param>
+            <param name="ClassFullName">类名</param>
+        </member>
+        <member name="M:NK.Identification.CardDriver.#ctor(System.Type)">
+            <summary>
+            读卡器驱动
+            </summary>
+            <param name="Server"></param>
+        </member>
+        <member name="P:NK.Identification.CardDriver.Mode">
+            <summary>
+            连接模式
+            </summary>
+        </member>
+        <member name="P:NK.Identification.CardDriver.Connection">
+            <summary>
+            连接信息
+            </summary>
+        </member>
+        <member name="P:NK.Identification.CardDriver.Refer">
+            <summary>
+            性能
+            </summary>
+        </member>
+        <member name="P:NK.Identification.CardDriver.Parameter">
+            <summary>
+            获取设置参数
+            </summary>
+        </member>
+        <member name="P:NK.Identification.CardDriver.Config">
+            <summary>
+            设置参数
+            </summary>
+        </member>
+        <member name="P:NK.Identification.CardDriver.DriverName">
+            <summary>
+            驱动名称
+            </summary>
+        </member>
+        <member name="P:NK.Identification.CardDriver.DriverDescription">
+            <summary>
+            驱动描述
+            </summary>
+        </member>
+        <member name="P:NK.Identification.CardDriver.Company">
+            <summary>
+            公司
+            </summary>
+        </member>
+        <member name="P:NK.Identification.CardDriver.Version">
+            <summary>
+            版本
+            </summary>
+        </member>
+        <member name="M:NK.Identification.CardDriver.Init">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="M:NK.Identification.CardDriver.PhyCard">
+            <summary>
+            获得物理卡号
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Identification.CardDriver.Read">
+            <summary>
+            读取卡内数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Identification.CardDriver.Write(System.String)">
+            <summary>
+            写入卡内数据
+            </summary>
+            <param name="data">数据</param>
+            <returns></returns>
+        </member>
+        <member name="T:NK.Identification.CarDriver">
+            <summary>
+            车牌识别
+            </summary>
+        </member>
+        <member name="M:NK.Identification.CarDriver.#ctor(System.String,System.String)">
+            <summary>
+            车牌识别
+            </summary>
+            <param name="FilePath">DLL路径</param>
+            <param name="ClassFullName">类名</param>
+        </member>
+        <member name="M:NK.Identification.CarDriver.#ctor(System.IO.FileInfo,System.String)">
+            <summary>
+            车牌识别
+            </summary>
+            <param name="FilePath">DLL路径</param>
+            <param name="ClassFullName">类名</param>
+        </member>
+        <member name="M:NK.Identification.CarDriver.#ctor(System.Type)">
+            <summary>
+            车牌识别
+            </summary>
+            <param name="Server"></param>
+        </member>
+        <member name="P:NK.Identification.CarDriver.Mode">
+            <summary>
+            连接模式
+            </summary>
+        </member>
+        <member name="P:NK.Identification.CarDriver.Connection">
+            <summary>
+            连接信息
+            </summary>
+        </member>
+        <member name="P:NK.Identification.CarDriver.Refer">
+            <summary>
+            性能
+            </summary>
+        </member>
+        <member name="P:NK.Identification.CarDriver.Parameter">
+            <summary>
+            获取设置参数
+            </summary>
+        </member>
+        <member name="P:NK.Identification.CarDriver.Config">
+            <summary>
+            设置参数
+            </summary>
+        </member>
+        <member name="P:NK.Identification.CarDriver.DriverName">
+            <summary>
+            驱动名称
+            </summary>
+        </member>
+        <member name="P:NK.Identification.CarDriver.DriverDescription">
+            <summary>
+            驱动描述
+            </summary>
+        </member>
+        <member name="P:NK.Identification.CarDriver.Company">
+            <summary>
+            公司
+            </summary>
+        </member>
+        <member name="P:NK.Identification.CarDriver.Version">
+            <summary>
+            版本
+            </summary>
+        </member>
+        <member name="M:NK.Identification.CarDriver.Init">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="M:NK.Identification.CarDriver.Image">
+            <summary>
+            车牌图像
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Identification.CarDriver.Feature(System.Drawing.Image)">
+            <summary>
+            车牌
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:NK.Identification.FaceDriver">
+            <summary>
+            人面识别驱动
+            </summary>
+        </member>
+        <member name="M:NK.Identification.FaceDriver.#ctor(System.String,System.String)">
+            <summary>
+            人面识别驱动
+            </summary>
+            <param name="FilePath">DLL路径</param>
+            <param name="ClassFullName">类名</param>
+        </member>
+        <member name="M:NK.Identification.FaceDriver.#ctor(System.IO.FileInfo,System.String)">
+            <summary>
+            人面识别驱动
+            </summary>
+            <param name="FilePath">DLL路径</param>
+            <param name="ClassFullName">类名</param>
+        </member>
+        <member name="M:NK.Identification.FaceDriver.#ctor(System.Type)">
+            <summary>
+            人面识别驱动
+            </summary>
+            <param name="Server"></param>
+        </member>
+        <member name="P:NK.Identification.FaceDriver.Mode">
+            <summary>
+            连接模式
+            </summary>
+        </member>
+        <member name="P:NK.Identification.FaceDriver.Connection">
+            <summary>
+            连接信息
+            </summary>
+        </member>
+        <member name="P:NK.Identification.FaceDriver.Refer">
+            <summary>
+            性能
+            </summary>
+        </member>
+        <member name="P:NK.Identification.FaceDriver.Parameter">
+            <summary>
+            获取设置参数
+            </summary>
+        </member>
+        <member name="P:NK.Identification.FaceDriver.Config">
+            <summary>
+            设置参数
+            </summary>
+        </member>
+        <member name="P:NK.Identification.FaceDriver.DriverName">
+            <summary>
+            驱动名称
+            </summary>
+        </member>
+        <member name="P:NK.Identification.FaceDriver.DriverDescription">
+            <summary>
+            驱动描述
+            </summary>
+        </member>
+        <member name="P:NK.Identification.FaceDriver.Company">
+            <summary>
+            公司
+            </summary>
+        </member>
+        <member name="P:NK.Identification.FaceDriver.Version">
+            <summary>
+            版本
+            </summary>
+        </member>
+        <member name="M:NK.Identification.FaceDriver.Init">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="M:NK.Identification.FaceDriver.Detection(System.Drawing.Image)">
+            <summary>
+            获取人面矩阵
+            </summary>
+            <param name="img"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Identification.FaceDriver.Feature(System.Drawing.Image)">
+            <summary>
+            获取人面特征
+            </summary>
+            <param name="img"></param>
+            <returns>人面特征，性别（0未知，1男，2，女）</returns>
+        </member>
+        <member name="M:NK.Identification.FaceDriver.Matching(System.String,System.String)">
+            <summary>
+            比对值
+            </summary>
+            <param name="Feature">特征</param>
+            <param name="Temple">模板</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Identification.FaceDriver.Matching(System.String,System.Collections.Generic.Dictionary{System.Object,System.String})">
+            <summary>
+            异步1对N
+            </summary>
+            <param name="Feature">特征</param>
+            <param name="Temple">模板</param> 
+            <returns>最高分</returns>
+        </member>
+        <member name="T:NK.Identification.FingerDrvier">
+            <summary>
+            指纹识别驱动
+            </summary>
+        </member>
+        <member name="M:NK.Identification.FingerDrvier.#ctor(System.String,System.String)">
+            <summary>
+            指纹识别驱动
+            </summary>
+            <param name="FilePath">DLL路径</param>
+            <param name="ClassFullName">类名</param>
+        </member>
+        <member name="M:NK.Identification.FingerDrvier.#ctor(System.IO.FileInfo,System.String)">
+            <summary>
+            指纹识别驱动
+            </summary>
+            <param name="FilePath">DLL路径</param>
+            <param name="ClassFullName">类名</param>
+        </member>
+        <member name="M:NK.Identification.FingerDrvier.#ctor(System.Type)">
+            <summary>
+            指纹识别驱动
+            </summary>
+            <param name="Server"></param>
+        </member>
+        <member name="P:NK.Identification.FingerDrvier.Mode">
+            <summary>
+            连接模式
+            </summary>
+        </member>
+        <member name="P:NK.Identification.FingerDrvier.Connection">
+            <summary>
+            连接信息
+            </summary>
+        </member>
+        <member name="P:NK.Identification.FingerDrvier.Refer">
+            <summary>
+            性能
+            </summary>
+        </member>
+        <member name="P:NK.Identification.FingerDrvier.Parameter">
+            <summary>
+            获取设置参数
+            </summary>
+        </member>
+        <member name="P:NK.Identification.FingerDrvier.Config">
+            <summary>
+            设置参数
+            </summary>
+        </member>
+        <member name="P:NK.Identification.FingerDrvier.DriverName">
+            <summary>
+            驱动名称
+            </summary>
+        </member>
+        <member name="P:NK.Identification.FingerDrvier.DriverDescription">
+            <summary>
+            驱动描述
+            </summary>
+        </member>
+        <member name="P:NK.Identification.FingerDrvier.Company">
+            <summary>
+            公司
+            </summary>
+        </member>
+        <member name="P:NK.Identification.FingerDrvier.Version">
+            <summary>
+            版本
+            </summary>
+        </member>
+        <member name="M:NK.Identification.FingerDrvier.Init">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="M:NK.Identification.FingerDrvier.Image">
+            <summary>
+            指纹图像
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Identification.FingerDrvier.Feature(System.Drawing.Image)">
+            <summary>
+            获取特征码
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Identification.FingerDrvier.Matching(System.String,System.String)">
+            <summary>
+            比对值
+            </summary>
+            <param name="Feature">特征</param>
+            <param name="Temple">模板</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Identification.FingerDrvier.Matching(System.String,System.Collections.Generic.Dictionary{System.Object,System.String})">
+            <summary>
+            异步1对N
+            </summary>
+            <param name="Feature">特征</param>
+            <param name="Temple">模板</param> 
+            <returns>最高分</returns>
+        </member>
+    </members>
+</doc>

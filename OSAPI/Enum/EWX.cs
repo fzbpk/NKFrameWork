@@ -1,0 +1,14 @@
+﻿namespace NK.API.Enum
+{
+    public enum EWX : uint
+    {
+        EWX_HYBRID_SHUTDOWN=0x00400000,
+        EWX_LOGOFF=0,
+        EWX_POWEROFF=0x00000008,
+        EWX_REBOOT=0x00000002,
+        EWX_RESTARTAPPS=0x00000040,
+        EWX_SHUTDOWN=0x00000001,
+        EWX_FORCE=0x00000004,
+        EWX_FORCEIFHUNG=0x00000010,
+    }
+}

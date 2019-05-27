@@ -1,0 +1,11 @@
+J:\Project\DotNet\NKFrameWork\Identification\bin\Debug\Identification.XML
+J:\Project\DotNet\NKFrameWork\Identification\bin\Debug\Identification.dll
+J:\Project\DotNet\NKFrameWork\Identification\bin\Debug\Identification.pdb
+J:\Project\DotNet\NKFrameWork\Identification\bin\Debug\NKComm.dll
+J:\Project\DotNet\NKFrameWork\Identification\bin\Debug\linq2db.dll
+J:\Project\DotNet\NKFrameWork\Identification\bin\Debug\NKComm.pdb
+J:\Project\DotNet\NKFrameWork\Identification\bin\Debug\NKComm.xml
+J:\Project\DotNet\NKFrameWork\Identification\bin\Debug\linq2db.pdb
+J:\Project\DotNet\NKFrameWork\Identification\obj\Debug\Identification.csprojResolveAssemblyReference.cache
+J:\Project\DotNet\NKFrameWork\Identification\obj\Debug\Identification.dll
+J:\Project\DotNet\NKFrameWork\Identification\obj\Debug\Identification.pdb

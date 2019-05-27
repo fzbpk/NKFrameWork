@@ -1,0 +1,2935 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NKComm</name>
+    </assembly>
+    <members>
+        <!-- Badly formed XML comment ignored for member "T:NK.Attribut.DisplayColumnAttribute" -->
+        <member name="P:NK.Attribut.DisplayColumnAttribute.index">
+            <summary>
+            索引
+            </summary>
+        </member>
+        <member name="P:NK.Attribut.DisplayColumnAttribute.Table">
+            <summary>
+            表/实体
+            </summary>
+        </member>
+        <member name="P:NK.Attribut.DisplayColumnAttribute.Column">
+            <summary>
+            字段
+            </summary>
+        </member>
+        <member name="P:NK.Attribut.DisplayColumnAttribute.Name">
+            <summary>
+            显示名
+            </summary>
+        </member>
+        <member name="P:NK.Attribut.DisplayColumnAttribute.Caption">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:NK.Attribut.DisplayColumnAttribute.Format">
+            <summary>
+            显示格式,TOSTRING表达式或正则表达式
+            </summary>
+        </member>
+        <member name="P:NK.Attribut.DisplayColumnAttribute.Unit">
+            <summary>
+            单位
+            </summary>
+        </member>
+        <member name="P:NK.Attribut.DisplayColumnAttribute.CSS">
+            <summary>
+            样式
+            </summary>
+        </member>
+        <member name="P:NK.Attribut.DisplayColumnAttribute.JS">
+            <summary>
+            JS函数
+            </summary>
+        </member>
+        <member name="P:NK.Attribut.DisplayColumnAttribute.CanSearch">
+            <summary>
+            是否用于搜索
+            </summary>
+        </member>
+        <member name="P:NK.Attribut.DisplayColumnAttribute.CanHead">
+            <summary>
+            是否用于表头显示
+            </summary>
+        </member>
+        <member name="P:NK.Attribut.DisplayColumnAttribute.CanDeitail">
+            <summary>
+            是否用于增删改查页显示
+            </summary>
+        </member>
+        <member name="P:NK.Attribut.DisplayColumnAttribute.CanCount">
+            <summary>
+            是否用于统计
+            </summary>
+        </member>
+        <member name="P:NK.Attribut.DisplayColumnAttribute.CanImpExp">
+            <summary>
+            是否可用于导入导出
+            </summary>
+        </member>
+        <member name="P:NK.Attribut.DisplayColumnAttribute.IsUnique">
+            <summary>
+            是否唯一
+            </summary>
+        </member>
+        <member name="P:NK.Attribut.DisplayColumnAttribute.Seqencing">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="P:NK.Attribut.DisplayColumnAttribute.Displaylanguage">
+            <summary>
+            显示语言
+            </summary>
+        </member>
+        <member name="T:NK.Class.CommunicateSession">
+            <summary>
+            通信Session
+            </summary>
+        </member>
+        <member name="P:NK.Class.CommunicateSession.SessionID">
+            <summary>
+            会话ID
+            </summary>
+        </member>
+        <member name="P:NK.Class.CommunicateSession.LocalMode">
+            <summary>
+            连接类型
+            </summary>
+        </member>
+        <member name="P:NK.Class.CommunicateSession.Connection">
+            <summary>
+            连接参数
+            </summary>
+        </member>
+        <member name="P:NK.Class.CommunicateSession.Remote">
+            <summary>
+            远端连接参数
+            </summary>
+        </member>
+        <member name="P:NK.Class.CommunicateSession.ListNO">
+            <summary>
+            ListNO
+            </summary>
+        </member>
+        <member name="P:NK.Class.CommunicateSession.ConnectTime">
+            <summary>
+            连接时间
+            </summary>
+        </member>
+        <member name="T:NK.Class.HttpListenerSession">
+            <summary>
+            HTTP服务Session
+            </summary>
+        </member>
+        <member name="P:NK.Class.HttpListenerSession.SessionID">
+            <summary>
+            会话ID
+            </summary>
+        </member>
+        <member name="P:NK.Class.HttpListenerSession.Connection">
+            <summary>
+            连接参数
+            </summary>
+        </member>
+        <member name="P:NK.Class.HttpListenerSession.Remote">
+            <summary>
+            远端连接参数
+            </summary>
+        </member>
+        <member name="P:NK.Class.HttpListenerSession.ListNO">
+            <summary>
+            ListNO
+            </summary>
+        </member>
+        <member name="P:NK.Class.HttpListenerSession.UrlRef">
+            <summary>
+            URL相对地址
+            </summary>
+        </member>
+        <member name="P:NK.Class.HttpListenerSession.Request">
+            <summary>
+            请求信息
+            </summary>
+        </member>
+        <member name="P:NK.Class.HttpListenerSession.Response">
+            <summary>
+            返回信息
+            </summary>
+        </member>
+        <member name="T:NK.Entity.Certificate">
+            <summary>
+            证书配置
+            </summary>
+        </member>
+        <member name="P:NK.Entity.Certificate.ConfigName">
+            <summary>
+            配置名
+            </summary>
+        </member>
+        <member name="P:NK.Entity.Certificate.Enable">
+            <summary>
+            启用配置
+            </summary>
+        </member>
+        <member name="P:NK.Entity.Certificate.guid">
+            <summary>
+            唯一ID
+            </summary>
+        </member>
+        <member name="P:NK.Entity.Certificate.SYSName">
+            <summary>
+            启用配置
+            </summary>
+        </member>
+        <member name="P:NK.Entity.Certificate.Company">
+            <summary>
+            授权单位
+            </summary>
+        </member>
+        <member name="P:NK.Entity.Certificate.User">
+            <summary>
+            接入账号名
+            </summary>
+        </member>
+        <member name="P:NK.Entity.Certificate.Password">
+            <summary>
+            接入密码
+            </summary>
+        </member>
+        <member name="P:NK.Entity.Certificate.APPKey">
+            <summary>
+            接入秘钥
+            </summary>
+        </member>
+        <member name="P:NK.Entity.Certificate.CertificateData">
+            <summary>
+            验证信息
+            </summary>
+        </member>
+        <member name="P:NK.Entity.Certificate.StartDateTime">
+            <summary>
+            生效时间
+            </summary>
+        </member>
+        <member name="P:NK.Entity.Certificate.EndDateTime">
+            <summary>
+            失效时间
+            </summary> 
+        </member>
+        <member name="P:NK.Entity.Certificate.Key">
+            <summary>
+            密匙
+            </summary>
+        </member>
+        <member name="P:NK.Entity.Certificate.Power">
+            <summary>
+            证书权限
+            </summary> 
+        </member>
+        <member name="T:NK.Entity.CertificateDetail">
+            <summary>
+            证书配置详情
+            </summary>
+        </member>
+        <member name="P:NK.Entity.CertificateDetail.ModuleName">
+            <summary>
+            模块名称
+            </summary>
+        </member>
+        <member name="P:NK.Entity.CertificateDetail.FuncName">
+            <summary>
+            功能名称
+            </summary>
+        </member>
+        <member name="P:NK.Entity.CertificateDetail.FuncPower">
+            <summary>
+            功能权限
+            </summary>
+        </member>
+        <member name="P:NK.Entity.CertificateDetail.CanUse">
+            <summary>
+            可用子功能,分割
+            </summary>
+        </member>
+        <member name="P:NK.Entity.CertificateDetail.CanNotUse">
+            <summary>
+            不可用子功能,分割
+            </summary>
+        </member>
+        <member name="T:NK.Entity.DBInfo">
+            <summary>
+            数据库配置
+            </summary>
+        </member>
+        <member name="P:NK.Entity.DBInfo.ID">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:NK.Entity.DBInfo.ConfigName">
+            <summary>
+            配置名
+            </summary>
+        </member>
+        <member name="P:NK.Entity.DBInfo.Enable">
+            <summary>
+            启用配置
+            </summary>
+        </member>
+        <member name="P:NK.Entity.DBInfo.Mode">
+            <summary>
+            数据库类型
+            </summary>
+        </member>
+        <member name="P:NK.Entity.DBInfo.Driver">
+            <summary>
+            数据库驱动
+            </summary>
+        </member>
+        <member name="P:NK.Entity.DBInfo.Url">
+            <summary>
+            数据库地址
+            </summary>
+        </member>
+        <member name="P:NK.Entity.DBInfo.Port">
+            <summary>
+            数据库端口
+            </summary>
+        </member>
+        <member name="P:NK.Entity.DBInfo.User">
+            <summary>
+            数据库账号
+            </summary>
+        </member>
+        <member name="P:NK.Entity.DBInfo.Password">
+            <summary>
+            数据库密码
+            </summary>
+        </member>
+        <member name="P:NK.Entity.DBInfo.DataBaseName">
+            <summary>
+            数据库名称
+            </summary>
+        </member>
+        <member name="P:NK.Entity.DBInfo.TimeOut">
+            <summary>
+            超时时间，ms
+            </summary>
+        </member>
+        <member name="P:NK.Entity.DBInfo.Charset">
+            <summary>
+            字符编码
+            </summary>
+        </member>
+        <member name="P:NK.Entity.DBInfo.ConnStr">
+            <summary>
+            连接字符串
+            </summary>
+        </member>
+        <member name="T:NK.Entity.DictInfo">
+            <summary>
+            字典信息
+            </summary>
+        </member>
+        <member name="P:NK.Entity.DictInfo.language">
+            <summary>
+            语言设置
+            </summary>
+        </member>
+        <member name="P:NK.Entity.DictInfo.Name">
+            <summary>
+            字典类型
+            </summary>
+        </member>
+        <member name="P:NK.Entity.DictInfo.Key">
+            <summary>
+            字典键名
+            </summary>
+        </member>
+        <member name="P:NK.Entity.DictInfo.Display">
+            <summary>
+            字典显示值
+            </summary>
+        </member>
+        <member name="P:NK.Entity.DictInfo.Value">
+            <summary>
+            字典值
+            </summary>
+        </member>
+        <member name="P:NK.Entity.DictInfo.Caption">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:NK.Entity.DictInfo.Enable">
+            <summary>
+            启用配置
+            </summary>
+        </member>
+        <member name="P:NK.Entity.DictInfo.Default">
+            <summary>
+            默认
+            </summary>
+        </member>
+        <member name="P:NK.Entity.DictInfo.PX">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="T:NK.Entity.IPInfo">
+            <summary>
+            IP地址信息
+            </summary>
+        </member>
+        <member name="P:NK.Entity.IPInfo.Enable">
+            <summary>
+            启用配置
+            </summary>
+        </member>
+        <member name="P:NK.Entity.IPInfo.Address_Family">
+             <summary>
+            IP类型
+             </summary>
+        </member>
+        <member name="P:NK.Entity.IPInfo.DHCP">
+             <summary>
+            DHCP
+             </summary>
+        </member>
+        <member name="P:NK.Entity.IPInfo.IPAddress">
+             <summary>
+            IPAddress
+             </summary>
+        </member>
+        <member name="P:NK.Entity.IPInfo.SubnetMask">
+             <summary>
+            SubnetMask
+             </summary>
+        </member>
+        <member name="P:NK.Entity.IPInfo.GateWay">
+             <summary>
+            GateWay
+             </summary>
+        </member>
+        <member name="P:NK.Entity.IPInfo.DNS">
+             <summary>
+            DNS地址
+             </summary>
+        </member>
+        <member name="P:NK.Entity.IPInfo.ConfigName">
+            <summary>
+            配置名
+            </summary>
+        </member>
+        <member name="T:NK.Entity.LogInfo">
+            <summary>
+            日志信息
+            </summary>
+        </member>
+        <member name="P:NK.Entity.LogInfo.RecTime">
+            <summary>
+            记录时间
+            </summary>
+        </member>
+        <member name="P:NK.Entity.LogInfo.ClassName">
+            <summary>
+            类名称
+            </summary>
+        </member>
+        <member name="P:NK.Entity.LogInfo.FuncName">
+            <summary>
+            模块名
+            </summary>
+        </member>
+        <member name="P:NK.Entity.LogInfo.MessID">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="P:NK.Entity.LogInfo.Message">
+            <summary>
+            日志内容
+            </summary>
+        </member>
+        <member name="T:NK.Entity.ReferSet">
+            <summary>
+            性能参数
+            </summary>
+        </member>
+        <member name="P:NK.Entity.ReferSet.ConfigName">
+            <summary>
+            配置名
+            </summary>
+        </member>
+        <member name="P:NK.Entity.ReferSet.IMode">
+            <summary>
+            归属
+            </summary>
+        </member>
+        <member name="P:NK.Entity.ReferSet.ReTry">
+            <summary>
+            重试次数
+            </summary>
+        </member>
+        <member name="P:NK.Entity.ReferSet.ConnectTimeOut">
+            <summary>
+            连接超时时间，毫秒
+            </summary>
+        </member>
+        <member name="P:NK.Entity.ReferSet.CheckAliveTime">
+            <summary>
+            检测连接超时，分钟
+            </summary>
+        </member>
+        <member name="P:NK.Entity.ReferSet.WaitTime">
+            <summary>
+            等待时间，毫秒
+            </summary>
+        </member>
+        <member name="P:NK.Entity.ReferSet.ExecTime">
+            <summary>
+            执行超时，毫秒
+            </summary>
+        </member>
+        <member name="P:NK.Entity.ReferSet.SendTimeout">
+            <summary>
+             发送超时，毫秒
+            </summary>
+        </member>
+        <member name="P:NK.Entity.ReferSet.SendBufferSize">
+            <summary>
+            发送缓存，B
+            </summary>
+        </member>
+        <member name="P:NK.Entity.ReferSet.ReceiveTimeout">
+            <summary>
+            接收超时，毫秒
+            </summary>
+        </member>
+        <member name="P:NK.Entity.ReferSet.ReceiveBufferSize">
+            <summary>
+            接收缓存,B
+            </summary>
+        </member>
+        <member name="P:NK.Entity.ReferSet.ConnPool">
+            <summary>
+            监听连接数
+            </summary>
+        </member>
+        <member name="P:NK.Entity.ReferSet.CharSet">
+            <summary>
+            配置名
+            </summary>
+        </member>
+        <member name="P:NK.Entity.ReferSet.Debug">
+            <summary>
+            调试模式
+            </summary>
+        </member>
+        <member name="T:NK.Entity.NetSet">
+            <summary>
+            以太网参数
+            </summary>
+        </member>
+        <member name="P:NK.Entity.NetSet.ConfigName">
+            <summary>
+            配置名
+            </summary>
+        </member>
+        <member name="P:NK.Entity.NetSet.Address_Family">
+            <summary>
+            寻址
+            </summary>
+        </member>
+        <member name="P:NK.Entity.NetSet.Socket_Type">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="P:NK.Entity.NetSet.Protocol_Type">
+            <summary>
+            协议
+            </summary>
+        </member>
+        <member name="P:NK.Entity.NetSet.Mode">
+             <summary>
+            类型
+             </summary>
+        </member>
+        <member name="P:NK.Entity.NetSet.IPAddress">
+            <summary>
+            目标IP地址
+            </summary>
+        </member>
+        <member name="P:NK.Entity.NetSet.Port">
+            <summary>
+            目标发送端口
+            </summary>
+        </member>
+        <member name="P:NK.Entity.NetSet.DomainName">
+            <summary>
+            域名
+            </summary>
+        </member>
+        <member name="P:NK.Entity.NetSet.AddrRef">
+            <summary>
+            地址参数
+            </summary>
+        </member>
+        <member name="P:NK.Entity.NetSet.Address">
+            <summary>
+            设备编址
+            </summary>
+        </member>
+        <member name="P:NK.Entity.NetSet.Enable">
+            <summary>
+            启用配置
+            </summary>
+        </member>
+        <member name="T:NK.Entity.PortsSet">
+            <summary>
+            传统IO参数，LPT/SERIAL
+            </summary>
+        </member>
+        <member name="P:NK.Entity.PortsSet.ConfigName">
+            <summary>
+            配置名
+            </summary>
+        </member>
+        <member name="P:NK.Entity.PortsSet.PortType">
+            <summary>
+            通讯类型
+            </summary>
+        </member>
+        <member name="P:NK.Entity.PortsSet.Mode">
+             <summary>
+            类型
+             </summary>
+        </member>
+        <member name="P:NK.Entity.PortsSet.Port">
+            <summary>
+            端号
+            </summary>
+        </member>
+        <member name="P:NK.Entity.PortsSet.Rate">
+            <summary>
+            波特率
+            </summary>
+        </member>
+        <member name="P:NK.Entity.PortsSet.DataBit">
+            <summary>
+            数据位
+            </summary>
+        </member>
+        <member name="P:NK.Entity.PortsSet.StopBit">
+            <summary>
+            停止位
+            </summary>
+        </member>
+        <member name="P:NK.Entity.PortsSet.Parity">
+            <summary>
+            校验
+            </summary>
+        </member>
+        <member name="P:NK.Entity.PortsSet.Ctrl">
+            <summary>
+            流控
+            </summary>
+        </member>
+        <member name="P:NK.Entity.PortsSet.Address">
+            <summary>
+            设备编址
+            </summary>
+        </member>
+        <member name="P:NK.Entity.PortsSet.Enable">
+            <summary>
+            启用配置
+            </summary>
+        </member>
+        <member name="T:NK.Entity.USBSet">
+            <summary>
+            以太网参数
+            </summary>
+        </member>
+        <member name="P:NK.Entity.USBSet.ConfigName">
+            <summary>
+            配置名
+            </summary>
+        </member>
+        <member name="P:NK.Entity.USBSet.devPath">
+            <summary>
+            设备路径
+            </summary>
+        </member>
+        <member name="P:NK.Entity.USBSet.VID">
+            <summary>
+            供应商ID,hex
+            </summary>
+        </member>
+        <member name="P:NK.Entity.USBSet.PID">
+            <summary>
+            产品识别码,hex
+            </summary>
+        </member>
+        <member name="P:NK.Entity.USBSet.Mode">
+             <summary>
+            类型
+             </summary>
+        </member>
+        <member name="P:NK.Entity.USBSet.Address">
+            <summary>
+            设备编址
+            </summary>
+        </member>
+        <member name="P:NK.Entity.USBSet.Enable">
+            <summary>
+            启用配置
+            </summary>
+        </member>
+        <member name="T:NK.ENum.CheckSum_Mode">
+            <summary>
+            校验类型
+            </summary>
+        </member>
+        <member name="F:NK.ENum.CheckSum_Mode.None">
+            <summary>
+            无
+            </summary>
+        </member>
+        <member name="F:NK.ENum.CheckSum_Mode.CRC8">
+            <summary>
+            CRC8
+            </summary>
+        </member>
+        <member name="F:NK.ENum.CheckSum_Mode.CRC16">
+            <summary>
+            CRC16
+            </summary>
+        </member>
+        <member name="F:NK.ENum.CheckSum_Mode.CRC32">
+            <summary>
+            CRC32
+            </summary>
+        </member>
+        <member name="F:NK.ENum.CheckSum_Mode.XOR">
+            <summary>
+            XOR
+            </summary>
+        </member>
+        <member name="T:NK.ENum.DBType">
+            <summary>
+            支持的数据库类型
+            </summary>
+        </member>
+        <member name="F:NK.ENum.DBType.None">
+            <summary>
+            无
+            </summary>
+        </member>
+        <member name="F:NK.ENum.DBType.MSSQL">
+            <summary>
+            MSSQL,支持从2000,2005,2008,2012
+            </summary>
+        </member>
+        <member name="F:NK.ENum.DBType.Access">
+            <summary>
+            Access
+            </summary>
+        </member>
+        <member name="F:NK.ENum.DBType.MYSQL">
+            <summary>
+            MYSQL,支持5.0及以上版本
+            </summary>
+        </member>
+        <member name="F:NK.ENum.DBType.Oracle">
+            <summary>
+            Oracle,支持10g及以上版本
+            </summary>
+        </member>
+        <member name="F:NK.ENum.DBType.SQLite">
+            <summary>
+            SQLite
+            </summary>
+        </member>
+        <member name="F:NK.ENum.DBType.PostgreSQL">
+            <summary>
+            PostgreSQL
+            </summary>
+        </member>
+        <member name="F:NK.ENum.DBType.OleDB">
+            <summary>
+            OleDB
+            </summary>
+        </member>
+        <member name="F:NK.ENum.DBType.ODBC">
+            <summary>
+            ODBC驱动
+            </summary>
+        </member>
+        <member name="T:NK.ENum.Debug_Mode">
+            <summary>
+            调试模式
+            </summary>
+        </member>
+        <member name="F:NK.ENum.Debug_Mode.None">
+            <summary>
+            无调试
+            </summary>
+        </member>
+        <member name="F:NK.ENum.Debug_Mode.TXT">
+            <summary>
+            保存文本
+            </summary>
+        </member>
+        <member name="F:NK.ENum.Debug_Mode.Event">
+            <summary>
+            触发事件
+            </summary>
+        </member>
+        <member name="F:NK.ENum.Debug_Mode.OS">
+            <summary>
+            系统事件
+            </summary>
+        </member>
+        <member name="T:NK.ENum.Language">
+            <summary>
+            语言设置
+            </summary>
+        </member>
+        <member name="F:NK.ENum.Language.Chinese">
+            <summary>
+            中文
+            </summary>
+        </member>
+        <member name="F:NK.ENum.Language.English">
+            <summary>
+            英文
+            </summary>
+        </member>
+        <member name="T:NK.ENum.Log_Type">
+            <summary>
+            日志类型
+            </summary>
+        </member>
+        <member name="F:NK.ENum.Log_Type.None">
+            <summary>
+            无
+            </summary>
+        </member>
+        <member name="F:NK.ENum.Log_Type.Infomation">
+            <summary>
+            信息
+            </summary>
+        </member>
+        <member name="F:NK.ENum.Log_Type.Error">
+            <summary>
+            错误
+            </summary>
+        </member>
+        <member name="F:NK.ENum.Log_Type.Test">
+            <summary>
+            测试
+            </summary>
+        </member>
+        <member name="F:NK.ENum.Log_Type.Alert">
+            <summary>
+            告警
+            </summary>
+        </member>
+        <member name="F:NK.ENum.Log_Type.ALL">
+            <summary>
+            其他
+            </summary>
+        </member>
+        <member name="T:NK.ENum.Operate_Type">
+            <summary>
+            操作类型
+            </summary>
+        </member>
+        <member name="F:NK.ENum.Operate_Type.None">
+            <summary>
+            无
+            </summary>
+        </member>
+        <member name="F:NK.ENum.Operate_Type.Insert">
+            <summary>
+            插入
+            </summary>
+        </member>
+        <member name="F:NK.ENum.Operate_Type.Update">
+            <summary>
+            修改
+            </summary>
+        </member>
+        <member name="F:NK.ENum.Operate_Type.DELETE">
+            <summary>
+            删除
+            </summary>
+        </member>
+        <member name="F:NK.ENum.Operate_Type.Find">
+            <summary>
+            查
+            </summary>
+        </member>
+        <member name="F:NK.ENum.Operate_Type.List">
+            <summary>
+            列出
+            </summary>
+        </member>
+        <member name="T:NK.ENum.Port_Mode">
+            <summary>
+            传统IO类型
+            </summary>
+        </member>
+        <member name="F:NK.ENum.Port_Mode.None">
+            <summary>
+            无
+            </summary>
+        </member>
+        <member name="F:NK.ENum.Port_Mode.RS232">
+            <summary>
+            RS232
+            </summary>
+        </member>
+        <member name="F:NK.ENum.Port_Mode.RS485">
+            <summary>
+            RS485
+            </summary>
+        </member>
+        <member name="F:NK.ENum.Port_Mode.RS422">
+            <summary>
+            RS422
+            </summary>
+        </member>
+        <member name="F:NK.ENum.Port_Mode.LPT">
+            <summary>
+            并口
+            </summary>
+        </member>
+        <member name="T:NK.ENum.Power_Type">
+            <summary>
+            权限类型
+            </summary>
+        </member>
+        <member name="F:NK.ENum.Power_Type.None">
+            <summary>
+            无
+            </summary>
+        </member>
+        <member name="F:NK.ENum.Power_Type.Write">
+            <summary>
+            无
+            </summary>
+        </member>
+        <member name="F:NK.ENum.Power_Type.Read">
+            <summary>
+            无
+            </summary>
+        </member>
+        <member name="F:NK.ENum.Power_Type.ALL">
+            <summary>
+            无
+            </summary>
+        </member>
+        <member name="T:NK.ENum.ReferForUse">
+            <summary>
+            性能参数归属
+            </summary>
+        </member>
+        <member name="F:NK.ENum.ReferForUse.None">
+            <summary>
+            无
+            </summary>
+        </member>
+        <member name="F:NK.ENum.ReferForUse.NetSet">
+            <summary>
+            TCPSET
+            </summary>
+        </member>
+        <member name="F:NK.ENum.ReferForUse.UartSet">
+            <summary>
+            UartSet
+            </summary>
+        </member>
+        <member name="F:NK.ENum.ReferForUse.USBSet">
+            <summary>
+            UartSet
+            </summary>
+        </member>
+        <member name="F:NK.ENum.ReferForUse.File">
+            <summary>
+            File
+            </summary>
+        </member>
+        <member name="T:NK.ENum.Save_Mode">
+            <summary>
+            配置保存方式
+            </summary>
+        </member>
+        <member name="F:NK.ENum.Save_Mode.None">
+            <summary>
+            无
+            </summary>
+        </member>
+        <member name="F:NK.ENum.Save_Mode.JSON">
+            <summary>
+            保存文本
+            </summary>
+        </member>
+        <member name="F:NK.ENum.Save_Mode.XML">
+            <summary>
+            保存XML
+            </summary>
+        </member>
+        <member name="F:NK.ENum.Save_Mode.DB">
+            <summary>
+            保存数据库
+            </summary>
+        </member>
+        <member name="T:NK.ENum.Net_Mode">
+            <summary>
+            网络模式
+            </summary>
+        </member>
+        <member name="F:NK.ENum.Net_Mode.None">
+            <summary>
+            无
+            </summary>
+        </member>
+        <member name="F:NK.ENum.Net_Mode.Local">
+            <summary>
+            本地
+            </summary>
+        </member>
+        <member name="F:NK.ENum.Net_Mode.Remote">
+            <summary>
+            远程
+            </summary>
+        </member>
+        <member name="T:NK.ENum.Security_Mode">
+            <summary>
+            加密类型
+            </summary>
+        </member>
+        <member name="F:NK.ENum.Security_Mode.None">
+            <summary>
+            无
+            </summary>
+        </member>
+        <member name="F:NK.ENum.Security_Mode.MD5">
+             <summary>
+            MD5
+             </summary>
+        </member>
+        <member name="F:NK.ENum.Security_Mode.DES">
+            <summary>
+            DES
+            </summary>
+        </member>
+        <member name="F:NK.ENum.Security_Mode.TripeDes">
+            <summary>
+            TripeDes
+            </summary>
+        </member>
+        <member name="T:NK.Event.CommEvent">
+            <summary>
+            通用事件
+            </summary>
+        </member>
+        <member name="T:NK.Event.CommEvent.HasErrorEven">
+            <summary>
+            出现错误事件
+            </summary>
+            <param name="Class">所在类</param>
+            <param name="Func">所在函数</param>
+            <param name="ex">错误信息</param>
+        </member>
+        <member name="T:NK.Event.CommEvent.LogEven">
+            <summary>
+            日志调试事件
+            </summary>
+            <param name="Class">所在类</param>
+            <param name="Func">所在函数</param>
+            <param name="flag">日志类型</param>
+            <param name="Message">信息</param>
+        </member>
+        <member name="T:NK.Event.DBEvent">
+            <summary>
+            数据库事件
+            </summary>
+        </member>
+        <member name="T:NK.Event.DBEvent.Connect">
+            <summary>
+            连接事件
+            </summary>
+            <param name="Cfg">配置信息</param> 
+        </member>
+        <member name="T:NK.Event.DBEvent.DisConnect">
+            <summary>
+            断开连接事件
+            </summary>
+            <param name="Cfg">配置信息</param> 
+        </member>
+        <member name="T:NK.Event.NetEvent">
+            <summary>
+            网络事件
+            </summary>
+        </member>
+        <member name="T:NK.Event.NetEvent.LogEven">
+            <summary>
+            日志
+            </summary> 
+            <param name="Class">类名</param>
+            <param name="Func">方法</param> 
+            <param name="Remote">远端连接</param>
+            <param name="Connection">本地连接</param>
+            <param name="LocalMode">连接模式</param>
+            <param name="flag"></param>
+            <param name="Message"></param>
+        </member>
+        <member name="T:NK.Event.NetEvent.Connect">
+            <summary>
+            连接事件
+            </summary>
+            <param name="Local">本地信息</param> 
+            <param name="Remote">远端信息</param> 
+            <param name="Imode">连接模式</param> 
+            <param name="SessionID">会话ID</param> 
+        </member>
+        <member name="T:NK.Event.NetEvent.DisConnect">
+            <summary>
+            断开连接事件，无论主动还是被动断开也会触发
+            </summary>
+            <param name="Local">本地信息</param> 
+            <param name="Remote">远端信息</param> 
+            <param name="Imode">连接模式</param> 
+            /// <param name="SessionID">会话ID</param> 
+        </member>
+        <member name="T:NK.Event.NetEvent.RequestFlagsEven">
+            <summary>
+            请求获取FLAGS
+            </summary>
+            <param name="Session">通信信息</param> 
+            <param name="Flags">标识</param>
+            <param name="SubConnection">子连接</param>
+            <param name="Step">步骤</param> 
+            <returns></returns>
+        </member>
+        <member name="T:NK.Event.NetEvent.ResponseFlagsEven">
+            <summary>
+            返回Flags
+            </summary>
+            <param name="Session">通信信息</param>
+            <param name="Flags">标识</param>
+            <param name="SubConnection">子连接</param>
+            <param name="Step">步骤</param> 
+            <param name="Data">接收信息</param> 
+            <returns>确认指令</returns>
+        </member>
+        <member name="T:NK.Event.NetEvent.RequestInitEven">
+            <summary>
+            请求注册信息事件
+            </summary>
+            <param name="Session">通信信息</param>
+            <param name="Flags">标识</param>
+            <param name="SubConnection">子连接</param>
+            <param name="Step">步骤</param> 
+            <returns>处理结果</returns>
+        </member>
+        <member name="T:NK.Event.NetEvent.ResponseInitEven">
+            <summary>
+            返回注册信息
+            </summary>
+            <param name="Session">通信信息</param>
+            <param name="Flags">标识</param>
+            <param name="SubConnection">子连接</param>
+            <param name="Step">步骤</param>
+            <param name="Data">接收信息</param>
+            <returns>标识字段</returns>
+        </member>
+        <member name="T:NK.Event.NetEvent.RequestHeartBeatEven">
+            <summary>
+            请求心跳数据
+            </summary>
+            <param name="Session">通信信息</param>
+            <param name="Flags">标识</param>
+            <param name="SubConnection">子连接</param>
+            <param name="Step">步骤</param> 
+            <returns>心跳查询数据</returns>
+        </member>
+        <member name="T:NK.Event.NetEvent.ResponeHeartBeatEven">
+            <summary>
+            返回心跳数据
+            </summary>
+            <param name="Session">通信信息</param>
+            <param name="Flags">标识</param>
+            <param name="SubConnection">子连接</param>
+            <param name="Step">步骤</param> 
+            <param name="Data">心跳信息</param>
+            <returns>确认</returns>
+        </member>
+        <member name="T:NK.Event.NetEvent.RequestDataEven">
+            <summary>
+            请求数据传输
+            </summary>
+            <param name="Session">通信信息</param>
+            <param name="Flags">标识</param>
+            <param name="SubConnection">子连接</param>
+            <param name="Step">步骤</param> 
+            <returns>发送数据</returns>
+        </member>
+        <member name="T:NK.Event.NetEvent.ResponsetDataEven">
+            <summary>
+            返回数据传输
+            </summary>
+            <param name="Session">通信信息</param>
+            <param name="Flags">标识</param>
+            <param name="SubConnection">子连接</param>
+            <param name="Step">步骤</param> 
+            <param name="Data">接收数据</param>
+            <returns>确认</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:NK.Event.NetEvent.ReceiveDataEven" -->
+        <member name="T:NK.Event.NetEvent.RequestErrorEven">
+            <summary>
+            错误显示
+            </summary>
+            <param name="Session">通信信息</param>
+            <param name="ex">错误信息</param> 
+        </member>
+        <member name="T:NK.Event.NetEvent.RequestGETEven">
+            <summary>
+            GET事件
+            </summary>
+            <param name="Session">通信信息</param> 
+            <param name="UrlPram">通信信息</param> 
+        </member>
+        <member name="T:NK.Event.NetEvent.RequestPOSTEven">
+            <summary>
+            POST事件
+            </summary>
+            <param name="Session">通信信息</param> 
+            <param name="UrlPram">URL参数</param>
+            <param name="PostData">POST参数</param> 
+        </member>
+        <member name="T:NK.Event.NetEvent.RequestPUTEven">
+            <summary>
+            PUT事件
+            </summary>
+             <param name="Session">通信信息</param>  
+        </member>
+        <member name="T:NK.Event.NetEvent.RequestDELETEEven">
+            <summary>
+            DELETE事件
+            </summary>
+             <param name="Session">通信信息</param>  
+        </member>
+        <member name="T:NK.Event.NetEvent.IsValidDirEven">
+            <summary>
+            FTP验证目录事件
+            </summary>
+            <param name="UserName"></param>
+            <param name="Session"></param>
+            <param name="Curdir"></param>
+            <param name="args"></param>
+            <param name="file"></param>
+            <param name="newCurdir"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NK.Event.NetEvent.FTPAuthEven">
+            <summary>
+            登陆
+            </summary>
+            <param name="UserName"></param>
+            <param name="Password"></param>
+            <param name="Session"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NK.Event.NetEvent.RequestMKDEven">
+            <summary>
+            创建目录
+            </summary>
+            <param name="UserName"></param>
+            <param name="Session"></param>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NK.Event.NetEvent.RequestRNTOEven">
+            <summary>
+            RNTO
+            </summary>
+            <param name="UserName"></param>
+            <param name="Session"></param>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NK.Event.NetEvent.RequestAPPEEven">
+            <summary>
+            续传
+            </summary>
+            <param name="UserName"></param>
+            <param name="Session"></param>
+            <param name="SOCK"></param>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NK.Event.NetEvent.RequsetDELEEven">
+            <summary>
+            删除文件
+            </summary>
+            <param name="UserName"></param>
+            <param name="Session"></param>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NK.Event.NetEvent.RequestRMDEven">
+            <summary>
+            删除目录
+            </summary>
+            <param name="UserName"></param>
+            <param name="Session"></param>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NK.Event.NetEvent.RequestSTOREven">
+            <summary>
+            上传文件
+            </summary>
+            <param name="UserName"></param>
+            <param name="Session"></param>
+            <param name="SOCK"></param>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NK.Event.NetEvent.RequestRETREven">
+            <summary>
+            下载文件，带续传
+            </summary>
+            <param name="UserName"></param>
+            <param name="Session"></param>
+            <param name="SOCK"></param>
+            <param name="file"></param>
+            <param name="offset"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NK.Event.NetEvent.RequestPWDEven">
+            <summary>
+            获取根目录
+            </summary>
+            <param name="UserName"></param>
+            <param name="Session"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NK.Event.NetEvent.RequestLISTEven">
+            <summary>
+            列出文件信息
+            </summary>
+            <param name="UserName"></param>
+            <param name="Session"></param>
+            <param name="cdir"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NK.Event.NetEvent.RequestSIZEEven">
+            <summary>
+            列出文件大小
+            </summary>
+            <param name="UserName"></param>
+            <param name="Session"></param>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NK.Event.NetEvent.RequsetNLSTEven">
+            <summary>
+            列出文件名
+            </summary>
+            <param name="UserName"></param>
+            <param name="Session"></param>
+            <param name="cdir"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NK.Interface.iDataBase">
+            <summary>
+            数据库接口
+            </summary>
+        </member>
+        <member name="P:NK.Interface.iDataBase.DataBase">
+            <summary>
+            数据库信息
+            </summary>
+        </member>
+        <member name="P:NK.Interface.iDataBase.Connection">
+            <summary>
+            连接参数
+            </summary>
+        </member>
+        <member name="P:NK.Interface.iDataBase.Timeout">
+            <summary>
+            超时
+            </summary>
+        </member>
+        <member name="P:NK.Interface.iDataBase.Tables">
+            <summary>
+            获取所有表
+            </summary>
+        </member>
+        <member name="P:NK.Interface.iDataBase.Views">
+            <summary>
+            获取所有视图
+            </summary>
+        </member>
+        <member name="P:NK.Interface.iDataBase.KeepAlive">
+            <summary>
+            长连接/短连接
+            </summary>
+        </member>
+        <member name="M:NK.Interface.iDataBase.Dispose">
+            <summary>
+            释放
+            </summary>
+        </member>
+        <member name="M:NK.Interface.iDataBase.GetConnection">
+            <summary>
+            连接数据库
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Interface.iDataBase.CloseConnection(System.Data.Common.DbConnection)">
+            <summary>
+            数据库连接关闭
+            </summary>
+            <param name="conn">打开的数据库连接</param>
+        </member>
+        <member name="M:NK.Interface.iDataBase.CheckConnection(System.String@)">
+            <summary>
+            检查数据库连接是否连接成功
+            </summary>
+            <param name="ErrMsg">错误信息</param>
+            <returns>是否连接成功</returns>
+        </member>
+        <member name="M:NK.Interface.iDataBase.ExecuteNonQuery(System.String)">
+            <summary>
+            数据库Insert,update,delete带返回执行数
+            </summary>
+            <param name="sql">SQL语句</param>
+            <returns>影响数量</returns>
+        </member>
+        <member name="M:NK.Interface.iDataBase.getDataTable(System.String)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">SQL语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Interface.iDataBase.getDataTable(System.String,System.Int32@)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">SQL语句</param>
+            <param name="RecCount">返回记录数</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Interface.iDataBase.getDataTable(System.String,System.Int32,System.Int32@)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">SQL语句</param>
+            <param name="PageSize">分页大小</param>
+            <param name="PageCount">返回总页数</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Interface.iDataBase.getDataTable(System.String,System.Int32,System.Int32@,System.Int32@,System.String)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">查询SQL</param>
+            <param name="PageSize">分页大小</param>
+            <param name="RecCount">返回查询记录数</param>
+            <param name="PageCount">返回总页数</param>
+            <param name="TableName">表名</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:NK.Interface.iDataBase.IsExist(System.String)">
+            <summary>
+            判断是否存在记录
+            </summary>
+            <param name="sql">查询数据库</param>
+            <returns>Boolean,TRUE为存在，False为不存在</returns>
+        </member>
+        <member name="M:NK.Interface.iDataBase.Find(System.String)">
+            <summary>
+            查询数据记录
+            </summary>
+            <param name="sql">查询SQL</param>
+            <returns>返回第一行查询数据</returns>
+        </member>
+        <member name="M:NK.Interface.iDataBase.ExecuteScalar(System.String)">
+            <summary>
+            查询记录
+            </summary>
+            <param name="sql">查询SQL</param>
+            <returns>返回第一行第一列数据</returns>
+        </member>
+        <member name="M:NK.Interface.iDataBase.TableIsExist(System.String)">
+            <summary>
+            查询表是否存在
+            </summary>
+            <param name="TableName">表名 </param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Interface.iDataBase.CheckField(System.String,System.String,System.Type@,System.Boolean@,System.Boolean@)">
+            <summary>
+            查询字段属性
+            </summary>
+            <param name="TableName">表名</param>
+            <param name="Field">字段名</param>
+            <param name="FieldType">字段类型</param>
+            <param name="CanBeNull">非空</param>
+            <param name="IsPrimaryKey">主键</param>
+            <returns>true 字段存在，false 字段不存在</returns>
+        </member>
+        <member name="M:NK.Interface.iDataBase.getDataTableByRam(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.Int32@,System.Int32@)">
+            <summary>
+            利用内存分页因此适合数据小但SQL语句复杂的查询
+            </summary>
+            <param name="PageIndex">当前页</param>
+            <param name="PageSize">分页大小</param>
+            <param name="DisplayField">字段列，每个字段用,分开</param>
+            <param name="TableName">表名，支持（） k 视图方式</param>
+            <param name="Where">查询条件，不带关键字WHERE</param>
+            <param name="OrderBy">排序语句，带order by</param>
+            <param name="GroupBy">GROUP BY 字段，不带关键字GROUP BY</param>
+            <param name="RecodeCount">返回总记录数</param>
+            <param name="PageCount">返回总记录数</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:NK.Interface.iDataBase.getDataTableByDB(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32@,System.Int32@)">
+            <summary>
+            利用数据库分页因此适合数据小但SQL语句复杂的查询
+            </summary>
+            <param name="PageIndex">当前页</param>
+            <param name="PageSize">分页大小</param>
+            <param name="DisplayField">字段列，每个字段用,分开</param>
+            <param name="TableName">表名，支持（） k 视图方式</param>
+            <param name="Where">查询条件，不带关键字WHERE</param>
+            <param name="OrderBy">排序语句，带order by</param>
+            <param name="OrderField">排序字段</param>
+            <param name="GroupBy">GROUP BY 字段，不带关键字GROUP BY</param>
+            <param name="RecodeCount">返回总记录数</param>
+            <param name="PageCount">返回总记录数</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:NK.Interface.iDataBase.Columns(System.String)">
+            <summary>
+            列出表字段
+            </summary>
+            <param name="TableName">表名</param>
+            <returns></returns>
+        </member>
+        <member name="E:NK.Interface.iDataBase.log">
+            <summary>
+            调试信息事件
+            </summary>
+        </member>
+        <member name="E:NK.Interface.iDataBase.HasError">
+            <summary>
+            错误出现事件，性能参数内DEBUG设置为EVENT有效
+            </summary>
+        </member>
+        <member name="E:NK.Interface.iDataBase.Connect">
+            <summary>
+            连接事件
+            </summary>
+        </member>
+        <member name="E:NK.Interface.iDataBase.DisConnect">
+            <summary>
+            连接断开
+            </summary>
+        </member>
+        <member name="T:NK.Interface.iNet">
+            <summary>
+             连接服务接口
+            </summary>
+        </member>
+        <member name="P:NK.Interface.iNet.IMode">
+            <summary>
+            连接方式
+            </summary>
+        </member>
+        <member name="P:NK.Interface.iNet.Connection">
+            <summary>
+             网络参数,JSON
+            </summary>
+        </member>
+        <member name="P:NK.Interface.iNet.Refer_Prama">
+            <summary>
+            性能参数
+            </summary>
+        </member>
+        <member name="P:NK.Interface.iNet.IsConnected">
+            <summary>
+            是否已连接
+            </summary>
+        </member>
+        <member name="P:NK.Interface.iNet.language">
+            <summary>
+            显示语言
+            </summary>
+        </member>
+        <member name="M:NK.Interface.iNet.Open">
+            <summary>
+            连接
+            </summary>
+        </member>
+        <member name="M:NK.Interface.iNet.Close">
+            <summary>
+            断开连接
+            </summary>
+        </member>
+        <member name="M:NK.Interface.iNet.Read(System.Int32,System.Int32)">
+            <summary>
+            数据读取
+            </summary>
+            <param name="Index">读取起始位置</param>
+            <param name="Datalen">数据量,0为全部读取</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Interface.iNet.Write(System.Byte[],System.Int32)">
+            <summary>
+            数据写入
+            </summary>
+            <param name="Data">数据</param>
+            <param name="Index">写入起始位置</param>
+            <returns></returns>
+        </member>
+        <member name="P:NK.Interface.iNet.HasError">
+            <summary>
+            错误出现事件，性能参数内DEBUG设置为EVENT有效
+            </summary>
+        </member>
+        <member name="P:NK.Interface.iNet.Connect">
+            <summary>
+            连接事件
+            </summary>
+        </member>
+        <member name="P:NK.Interface.iNet.DisConnect">
+            <summary>
+            连接断开
+            </summary>
+        </member>
+        <member name="T:NK.Interface.iCommunicate">
+            <summary>
+            通信连接接口
+            </summary>
+        </member>
+        <member name="P:NK.Interface.iCommunicate.IMode">
+            <summary>
+            连接方式
+            </summary>
+        </member>
+        <member name="P:NK.Interface.iCommunicate.Connection">
+            <summary>
+             网络参数 
+            </summary>
+        </member>
+        <member name="P:NK.Interface.iCommunicate.Refer">
+            <summary>
+            性能参数
+            </summary>
+        </member>
+        <member name="P:NK.Interface.iCommunicate.IsRuning">
+            <summary>
+            是否已连接
+            </summary>
+        </member>
+        <member name="P:NK.Interface.iCommunicate.HeartBeatTime">
+            <summary>
+            心跳时间
+            </summary>
+        </member>
+        <member name="P:NK.Interface.iCommunicate.InquiryTime">
+            <summary>
+            查询时间
+            </summary>
+        </member>
+        <member name="P:NK.Interface.iCommunicate.FlagCount">
+            <summary>
+            标识获取次数
+            </summary>
+        </member>
+        <member name="P:NK.Interface.iCommunicate.RegeditCount">
+            <summary>
+            注册执行次数
+            </summary>
+        </member>
+        <member name="P:NK.Interface.iCommunicate.HeartBeatCount">
+            <summary>
+            心跳执行次数
+            </summary>
+        </member>
+        <member name="P:NK.Interface.iCommunicate.DataCount">
+            <summary>
+            获取数据执行次数
+            </summary>
+        </member>
+        <member name="P:NK.Interface.iCommunicate.ConnectionState">
+            <summary>
+            连接在线状态
+            </summary>
+        </member>
+        <member name="P:NK.Interface.iCommunicate.language">
+            <summary>
+            描述语言
+            </summary>
+        </member>
+        <member name="P:NK.Interface.iCommunicate.LocalConnection">
+            <summary>
+            本地连接信息
+            </summary>
+        </member>
+        <member name="P:NK.Interface.iCommunicate.RemoteConnection">
+            <summary>
+            远端连接信息
+            </summary>
+        </member>
+        <member name="M:NK.Interface.iCommunicate.Start">
+            <summary>
+            连接
+            </summary>
+        </member>
+        <member name="M:NK.Interface.iCommunicate.Stop">
+            <summary>
+            断开连接
+            </summary>
+        </member>
+        <member name="M:NK.Interface.iCommunicate.IO(System.String,System.Byte[])">
+            <summary>
+            数据写入读取
+            </summary>
+            <param name="flags">标识</param>
+            <param name="Data">数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Interface.iCommunicate.ClearSession(System.String)">
+            <summary>
+            清除SESSION
+            </summary>
+            <param name="flags">标识</param>
+        </member>
+        <member name="M:NK.Interface.iCommunicate.GetSession(System.String)">
+            <summary>
+            获取SESSION
+            </summary>
+            <param name="flags">标识</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Interface.iCommunicate.SetSession(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            设置SESSION
+            </summary>
+            <param name="flags">标识</param>
+            <param name="session">Session</param>
+            <returns></returns>
+        </member>
+        <member name="E:NK.Interface.iCommunicate.log">
+            <summary>
+            调试信息事件
+            </summary>
+        </member>
+        <member name="E:NK.Interface.iCommunicate.Connectlog">
+            <summary>
+            连接调试信息
+            </summary>
+        </member>
+        <member name="E:NK.Interface.iCommunicate.HasError">
+            <summary>
+            错误出现事件，性能参数内DEBUG设置为EVENT有效
+            </summary>
+        </member>
+        <member name="E:NK.Interface.iCommunicate.Connect">
+            <summary>
+            连接事件
+            </summary>
+        </member>
+        <member name="E:NK.Interface.iCommunicate.DisConnect">
+            <summary>
+            连接断开
+            </summary>
+        </member>
+        <member name="E:NK.Interface.iCommunicate.RequestInit">
+            <summary>
+            请求注册事件
+            </summary>
+        </member>
+        <member name="E:NK.Interface.iCommunicate.ResponseInit">
+            <summary>
+            返回注册事件
+            </summary>
+        </member>
+        <member name="E:NK.Interface.iCommunicate.RequestData">
+            <summary>
+            请求数据事件
+            </summary>
+        </member>
+        <member name="E:NK.Interface.iCommunicate.ResponsetData">
+            <summary>
+            返回数据事件
+            </summary>
+        </member>
+        <member name="E:NK.Interface.iCommunicate.ReceiveData">
+            <summary>
+            接收到数据
+            </summary>
+        </member>
+        <member name="E:NK.Interface.iCommunicate.RequestHeartBeat">
+            <summary>
+            请求心跳事件
+            </summary>
+        </member>
+        <member name="E:NK.Interface.iCommunicate.ResponeHeartBeat">
+            <summary>
+            返回心跳事件
+            </summary>
+        </member>
+        <member name="E:NK.Interface.iCommunicate.RequestFlags">
+            <summary>
+            请求获取FLAGS
+            </summary>
+        </member>
+        <member name="E:NK.Interface.iCommunicate.ResponseFlags">
+            <summary>
+            返回Flags
+            </summary>
+        </member>
+        <member name="T:NK.Interface.iTransaction">
+            <summary>
+            数据库事务
+            </summary>
+        </member>
+        <member name="P:NK.Interface.iTransaction.DataBase">
+            <summary>
+            数据库信息
+            </summary>
+        </member>
+        <member name="P:NK.Interface.iTransaction.Connection">
+            <summary>
+            连接参数
+            </summary>
+        </member>
+        <member name="P:NK.Interface.iTransaction.Timeout">
+            <summary>
+            超时
+            </summary>
+        </member>
+        <member name="P:NK.Interface.iTransaction.Tables">
+            <summary>
+            获取所有表
+            </summary>
+        </member>
+        <member name="P:NK.Interface.iTransaction.Views">
+            <summary>
+            获取所有视图
+            </summary>
+        </member>
+        <member name="P:NK.Interface.iTransaction.KeepAlive">
+            <summary>
+            长连接/短连接
+            </summary>
+        </member>
+        <member name="M:NK.Interface.iTransaction.Dispose">
+            <summary>
+            释放
+            </summary>
+        </member>
+        <member name="M:NK.Interface.iTransaction.CheckConnection(System.String@)">
+            <summary>
+            检查数据库连接是否连接成功
+            </summary>
+            <param name="ErrMsg">错误信息</param>
+            <returns>是否连接成功</returns>
+        </member>
+        <member name="M:NK.Interface.iTransaction.ExecuteNonQuery(System.String)">
+            <summary>
+            数据库Insert,update,delete 
+            </summary>
+            <param name="sql">SQL语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Interface.iTransaction.getDataTable(System.String)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">SQL语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Interface.iTransaction.getDataTable(System.String,System.Int32@)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">SQL语句</param>
+            <param name="RecCount">返回记录数</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Interface.iTransaction.getDataTable(System.String,System.Int32,System.Int32@)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">SQL语句</param>
+            <param name="PageSize">分页大小</param>
+            <param name="PageCount">返回总页数</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Interface.iTransaction.getDataTable(System.String,System.Int32,System.Int32@,System.Int32@,System.String)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">查询SQL</param>
+            <param name="PageSize">分页大小</param>
+            <param name="RecCount">返回查询记录数</param>
+            <param name="PageCount">返回总页数</param>
+            <param name="TableName">表名</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:NK.Interface.iTransaction.IsExist(System.String)">
+            <summary>
+            判断是否存在记录
+            </summary>
+            <param name="sql">查询数据库</param>
+            <returns>Boolean,TRUE为存在，False为不存在</returns>
+        </member>
+        <member name="M:NK.Interface.iTransaction.Find(System.String)">
+            <summary>
+            查询数据记录
+            </summary>
+            <param name="sql">查询SQL</param>
+            <returns>返回第一行查询数据</returns>
+        </member>
+        <member name="M:NK.Interface.iTransaction.ExecuteScalar(System.String)">
+            <summary>
+            查询记录
+            </summary>
+            <param name="sql">查询SQL</param>
+            <returns>返回第一行第一列数据</returns>
+        </member>
+        <member name="M:NK.Interface.iTransaction.TableIsExist(System.String)">
+            <summary>
+            查询表是否存在
+            </summary>
+            <param name="TableName">表名 </param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Interface.iTransaction.CheckField(System.String,System.String,System.Type@,System.Boolean@,System.Boolean@)">
+            <summary>
+            查询字段属性
+            </summary>
+            <param name="TableName">表名</param>
+            <param name="Field">字段名</param>
+            <param name="FieldType">字段类型</param>
+            <param name="CanBeNull">非空</param>
+            <param name="IsPrimaryKey">主键</param>
+            <returns>true 字段存在，false 字段不存在</returns>
+        </member>
+        <member name="M:NK.Interface.iTransaction.getDataTableByRam(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.Int32@,System.Int32@)">
+            <summary>
+            利用内存分页因此适合数据小但SQL语句复杂的查询
+            </summary>
+            <param name="PageIndex">当前页</param>
+            <param name="PageSize">分页大小</param>
+            <param name="DisplayField">字段列，每个字段用,分开</param>
+            <param name="TableName">表名，支持（） k 视图方式</param>
+            <param name="Where">查询条件，不带关键字WHERE</param>
+            <param name="OrderBy">排序语句，带order by</param>
+            <param name="GroupBy">GROUP BY 字段，不带关键字GROUP BY</param>
+            <param name="RecodeCount">返回总记录数</param>
+            <param name="PageCount">返回总记录数</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:NK.Interface.iTransaction.getDataTableByDB(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32@,System.Int32@)">
+            <summary>
+            利用数据库分页因此适合数据小但SQL语句复杂的查询
+            </summary>
+            <param name="PageIndex">当前页</param>
+            <param name="PageSize">分页大小</param>
+            <param name="DisplayField">字段列，每个字段用,分开</param>
+            <param name="TableName">表名，支持（） k 视图方式</param>
+            <param name="Where">查询条件，不带关键字WHERE</param>
+            <param name="OrderBy">排序语句，带order by</param>
+            <param name="OrderField">排序字段</param>
+            <param name="GroupBy">GROUP BY 字段，不带关键字GROUP BY</param>
+            <param name="RecodeCount">返回总记录数</param>
+            <param name="PageCount">返回总记录数</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:NK.Interface.iTransaction.Columns(System.String)">
+            <summary>
+            列出表字段
+            </summary>
+            <param name="TableName">表名</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Interface.iTransaction.Transaction">
+            <summary>
+            启用实物
+            </summary>
+        </member>
+        <member name="M:NK.Interface.iTransaction.SaveChange(System.Boolean)">
+            <summary>
+            执行事务并完成事务，当出错后自动回滚。再次执行需要执行Transaction
+            </summary>
+        </member>
+        <member name="M:NK.Interface.iTransaction.Cancel">
+            <summary>
+            回滚后完成事务。再次执行需要执行Transaction
+            </summary>
+        </member>
+        <member name="E:NK.Interface.iTransaction.log">
+            <summary>
+            调试信息事件
+            </summary>
+        </member>
+        <member name="E:NK.Interface.iTransaction.HasError">
+            <summary>
+            错误出现事件，性能参数内DEBUG设置为EVENT有效
+            </summary>
+        </member>
+        <member name="E:NK.Interface.iTransaction.Connect">
+            <summary>
+            连接事件
+            </summary>
+        </member>
+        <member name="E:NK.Interface.iTransaction.DisConnect">
+            <summary>
+            连接断开
+            </summary>
+        </member>
+        <member name="T:NK.Message.ContorlsMessage">
+            <summary>
+            控件显示语言
+            </summary>
+        </member>
+        <member name="M:NK.Message.ContorlsMessage.Select(NK.ENum.Language)">
+            <summary>
+            请选择
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.ContorlsMessage.Enter(NK.ENum.Language)">
+            <summary>
+            请输入
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.ContorlsMessage.Search(NK.ENum.Language)">
+            <summary>
+            搜索
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.ContorlsMessage.Open(NK.ENum.Language)">
+            <summary>
+            打开
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.ContorlsMessage.Close(NK.ENum.Language)">
+            <summary>
+            关闭
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.ContorlsMessage.Exit(NK.ENum.Language)">
+            <summary>
+            退出
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.ContorlsMessage.Save(NK.ENum.Language)">
+            <summary>
+            保存
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.ContorlsMessage.SaveAs(NK.ENum.Language)">
+            <summary>
+            另存为
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.ContorlsMessage.OpenAs(NK.ENum.Language)">
+            <summary>
+            打开为
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.ContorlsMessage.ADD(NK.ENum.Language)">
+            <summary>
+            增加
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.ContorlsMessage.Delete(NK.ENum.Language)">
+            <summary>
+            删除
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.ContorlsMessage.Edit(NK.ENum.Language)">
+            <summary>
+            修改
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.ContorlsMessage.View(NK.ENum.Language)">
+            <summary>
+            查看
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.ContorlsMessage.Creat(NK.ENum.Language)">
+            <summary>
+            创建
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.ContorlsMessage.Import(NK.ENum.Language)">
+            <summary>
+            导入
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.ContorlsMessage.Export(NK.ENum.Language)">
+            <summary>
+            导出
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.ContorlsMessage.Print(NK.ENum.Language)">
+            <summary>
+            打印
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.ContorlsMessage.Set(NK.ENum.Language)">
+            <summary>
+            设置
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.ContorlsMessage.Clear(NK.ENum.Language)">
+            <summary>
+            清除
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.ContorlsMessage.OK(NK.ENum.Language)">
+            <summary>
+            确认
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.ContorlsMessage.Cancel(NK.ENum.Language)">
+            <summary>
+            取消
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.ContorlsMessage.Back(NK.ENum.Language)">
+            <summary>
+            返回
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.ContorlsMessage.ReSet(NK.ENum.Language)">
+            <summary>
+            重置
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.ContorlsMessage.Preview(NK.ENum.Language)">
+            <summary>
+            预览
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.ContorlsMessage.Name(NK.ENum.Language)">
+            <summary>
+            名称
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.ContorlsMessage.Code(NK.ENum.Language)">
+            <summary>
+            编码
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.ContorlsMessage.StartTime(NK.ENum.Language)">
+            <summary>
+            开始时间
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.ContorlsMessage.EndTime(NK.ENum.Language)">
+            <summary>
+            结束时间
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.ContorlsMessage.PasswordNeverExpired(NK.ENum.Language)">
+            <summary>
+            密码永不过期
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.ContorlsMessage.Enable(NK.ENum.Language)">
+            <summary>
+            启用
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.ContorlsMessage.Disable(NK.ENum.Language)">
+            <summary>
+            禁用
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.ContorlsMessage.KeyWord(NK.ENum.Language)">
+            <summary>
+            关键字
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.ContorlsMessage.First(NK.ENum.Language)">
+            <summary>
+            首页
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.ContorlsMessage.Last(NK.ENum.Language)">
+            <summary>
+            末页
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.ContorlsMessage.Next(NK.ENum.Language)">
+            <summary>
+            下页
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.ContorlsMessage.Previous(NK.ENum.Language)">
+            <summary>
+            上页
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.ContorlsMessage.Operation(NK.ENum.Language)">
+            <summary>
+            操作
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.ContorlsMessage.List(NK.ENum.Language)">
+            <summary>
+            列表
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.FTPMessage.CMDOK(NK.ENum.Language)">
+            <summary>
+            执行成功
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.FTPMessage.MessReady(NK.ENum.Language)">
+            <summary>
+            服务已准备好
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.FTPMessage.SignOff(NK.ENum.Language)">
+            <summary>
+            注销
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.FTPMessage.MessTooManyBadCmds(NK.ENum.Language)">
+            <summary>
+            已达最大错误数
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.FTPMessage.CmdTimeOut(NK.ENum.Language)">
+            <summary>
+            执行超时
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.FTPMessage.UnknownError(NK.ENum.Language)">
+            <summary>
+            未知错误
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.FTPMessage.AlreadyAuth(NK.ENum.Language)">
+            <summary>
+            重复执行认证
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.FTPMessage.UserButNotPass(NK.ENum.Language)">
+            <summary>
+            请输入指定用户密码
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.FTPMessage.EnterUser(NK.ENum.Language)">
+            <summary>
+            请输入用户名
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.FTPMessage.SyntaxError(NK.ENum.Language)">
+            <summary>
+            语法错误
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.FTPMessage.PassOk(NK.ENum.Language)">
+            <summary>
+            密码已获取
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.FTPMessage.CwdOk(NK.ENum.Language)">
+            <summary>
+            改变工作目录成功
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.FTPMessage.DeleOk(NK.ENum.Language)">
+            <summary>
+            删除成功
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.FTPMessage.AuthFailed(NK.ENum.Language)">
+            <summary>
+            登陆失败
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.FTPMessage.PassReq(System.String,NK.ENum.Language)">
+            <summary>
+            请输入密码
+            </summary>
+            <param name="userName"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.FTPMessage.Pwd(System.String,NK.ENum.Language)">
+            <summary>
+            当前目录
+            </summary>
+            <param name="curdir"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.FTPMessage.PwdFal(System.String,NK.ENum.Language)">
+            <summary>
+            非当前目录
+            </summary>
+            <param name="curdir"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.FTPMessage.TypeSet(System.String,NK.ENum.Language)">
+            <summary>
+            类型设置
+            </summary>
+            <param name="type"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.FTPMessage.InvalidType(System.String,NK.ENum.Language)">
+            <summary>
+            错误的类型
+            </summary>
+            <param name="type">类型</param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.FTPMessage.AuthReq(NK.ENum.Language)">
+            <summary>
+            请先登陆
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.FTPMessage.PortCmdSuccess(NK.ENum.Language)">
+            <summary>
+            主动传输模式转换成功
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.FTPMessage.DataOpen(NK.ENum.Language)">
+            <summary>
+            连接已打开
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.FTPMessage.DataOpening(NK.ENum.Language)">
+            <summary>
+            连接正在打开
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.FTPMessage.DataConFailed(NK.ENum.Language)">
+            <summary>
+            连接打开失败 
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.FTPMessage.TrComplete(NK.ENum.Language)">
+            <summary>
+            传输成功
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.FTPMessage.TrFailed(NK.ENum.Language)">
+            <summary>
+            传输失败
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.FTPMessage.AccesDenied(NK.ENum.Language)">
+            <summary>
+            没有权限
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.FTPMessage.PasvCmdSuccess(System.String,NK.ENum.Language)">
+            <summary>
+            切换被动模式成功
+            </summary>
+            <param name="ip">IP</param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.FTPMessage.TimeOut(NK.ENum.Language)">
+            <summary>
+            超时已退出
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.FTPMessage.NOOPOK(NK.ENum.Language)">
+            <summary>
+            NOOP
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.FTPMessage.DirCreatedOK(NK.ENum.Language)">
+            <summary>
+            目录创建成功
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.FTPMessage.RNFRFaile(NK.ENum.Language)">
+            <summary>
+            请输入要修改的文件名
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.FTPMessage.Badsequencecommands(NK.ENum.Language)">
+            <summary>
+            错误的命令顺序
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.FTPMessage.Errorrenameing(NK.ENum.Language)">
+            <summary>
+            错误的文件名或目录名
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.FTPMessage.Directoryrenamed(NK.ENum.Language)">
+            <summary>
+            目录重名
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.FTPMessage.badargumentREST(NK.ENum.Language)">
+            <summary>
+            REST参数有误
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.FTPMessage.argumentREST(System.Int32,NK.ENum.Language)">
+            <summary>
+            返回REST
+            </summary>
+            <param name="OffSet"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.FTPMessage.BadHome(NK.ENum.Language)">
+            <summary>
+            主目录有误
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.FTPMessage.opendatafailed(NK.ENum.Language)">
+            <summary>
+            无法打开数据连接
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.FTPMessage.Invalidcommand(NK.ENum.Language)">
+            <summary>
+            命令没有执行
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.FTPMessage.Noted(NK.ENum.Language)">
+            <summary>
+            Noted
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NK.Message.PowerMessage">
+            <summary>
+            权限账户信息
+            </summary>
+        </member>
+        <member name="M:NK.Message.PowerMessage.AccountName(NK.ENum.Language)">
+            <summary>
+            用户名
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.PowerMessage.AccountPassWord(NK.ENum.Language)">
+            <summary>
+            密码
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.PowerMessage.Login(NK.ENum.Language)">
+            <summary>
+            登陆
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.PowerMessage.Logout(NK.ENum.Language)">
+            <summary>
+            注销
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.PowerMessage.AccountDisabled(NK.ENum.Language)">
+            <summary>
+            账户被禁用
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.PowerMessage.AccountNameNullOrEmpty(NK.ENum.Language)">
+            <summary>
+            用户名为空
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.PowerMessage.AccountPasswordNullOrEmpty(NK.ENum.Language)">
+            <summary>
+            密码为空
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.PowerMessage.AccountNorFound(System.String,NK.ENum.Language)">
+            <summary>
+            找不到用户
+            </summary>
+            <param name="name"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.PowerMessage.PasswordIncorrect(NK.ENum.Language)">
+            <summary>
+            密码错误
+            </summary> 
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.PowerMessage.PleaseLogin(NK.ENum.Language)">
+            <summary>
+            请登录
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.PowerMessage.PleaseReLogin(NK.ENum.Language)">
+            <summary>
+            请重新登录
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.PowerMessage.LoginOK(NK.ENum.Language)">
+            <summary>
+            登录成功
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.PowerMessage.Loginfailed(NK.ENum.Language)">
+            <summary>
+            登录失败
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.PowerMessage.LoginTimeout(NK.ENum.Language)">
+            <summary>
+            登录超时
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.PowerMessage.LoginKit(NK.ENum.Language)">
+            <summary>
+            已在其他地方登录
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.PowerMessage.RememberMe(NK.ENum.Language)">
+            <summary>
+            RememberMe
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.PowerMessage.Regedit(NK.ENum.Language)">
+             <summary>
+            注册
+             </summary>
+             <param name="language"></param>
+             <returns></returns>
+        </member>
+        <member name="T:NK.Message.SystemMessage">
+            <summary>
+            公共信息
+            </summary>
+        </member>
+        <member name="M:NK.Message.SystemMessage.IsNotExist(System.String,NK.ENum.Language)">
+            <summary>
+            不存在
+            </summary>
+             <param name="Message"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.SystemMessage.IsExist(System.String,NK.ENum.Language)">
+            <summary>
+            存在
+            </summary>
+            <param name="Message"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.SystemMessage.ExecStart(NK.ENum.Language)">
+            <summary>
+            执行开始
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.SystemMessage.ExecStop(NK.ENum.Language)">
+            <summary>
+            执行结束
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.SystemMessage.ExecOK(NK.ENum.Language)">
+            <summary>
+            执行成功
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.SystemMessage.ExecFail(NK.ENum.Language)">
+            <summary>
+            执行失败
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.SystemMessage.Connect(System.String,NK.ENum.Language)">
+            <summary>
+            连接成功
+            </summary>
+            <param name="key"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.SystemMessage.DisConnect(System.String,NK.ENum.Language)">
+            <summary>
+            连接断开
+            </summary>
+            <param name="key"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.SystemMessage.NotSupported(System.String,NK.ENum.Language)">
+            <summary>
+            操作不支持
+            </summary>
+            <param name="op"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.SystemMessage.RefNullOrEmpty(System.String,NK.ENum.Language)">
+            <summary>
+            参数为空
+            </summary>
+            <param name="Ref"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.SystemMessage.CastError(System.String,NK.ENum.Language)">
+            <summary>
+            转换失败
+            </summary>
+            <param name="Ref"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.SystemMessage.RefValDisp(System.String,System.String,NK.ENum.Language)">
+            <summary>
+            显示参数和值
+            </summary>
+            <param name="Ref"></param>
+            <param name="Val"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.SystemMessage.Init(System.String,NK.ENum.Language)">
+            <summary>
+            初始化
+            </summary>
+            <param name="Object"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.SystemMessage.SET(System.String,NK.ENum.Language)">
+            <summary>
+            设置
+            </summary>
+            <param name="Object"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.SystemMessage.Check(System.String,NK.ENum.Language)">
+            <summary>
+            检测
+            </summary>
+            <param name="Object"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.SystemMessage.Badsequencecommands(NK.ENum.Language)">
+            <summary>
+            错误的命令顺序
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.SystemMessage.CertificateExpired(NK.ENum.Language)">
+            <summary>
+            证书过期
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.SystemMessage.ProbationPeriodExamples(NK.ENum.Language)">
+            <summary>
+            试用期已过
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NK.Message.TipsMessage">
+            <summary>
+            提示语
+            </summary>
+        </member>
+        <member name="M:NK.Message.TipsMessage.Select(NK.ENum.Language)">
+            <summary>
+            请选择记录
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.TipsMessage.ADD(System.Boolean,NK.ENum.Language)">
+            <summary>
+            增加
+            </summary>
+            <param name="result"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.TipsMessage.Delete(System.Boolean,NK.ENum.Language)">
+            <summary>
+            删除
+            </summary>
+            <param name="result"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.TipsMessage.Edit(System.Boolean,NK.ENum.Language)">
+            <summary>
+            修改
+            </summary>
+            <param name="result"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.TipsMessage.Set(System.Boolean,NK.ENum.Language)">
+            <summary>
+            设置
+            </summary>
+            <param name="result"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.TipsMessage.Save(System.Boolean,NK.ENum.Language)">
+            <summary>
+            设置
+            </summary>
+            <param name="result"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.TipsMessage.Exec(System.Boolean,NK.ENum.Language)">
+            <summary>
+            执行
+            </summary>
+            <param name="result"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.TipsMessage.DeleteConfig(NK.ENum.Language)">
+            <summary>
+            删除确定
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.TipsMessage.EditConfig(NK.ENum.Language)">
+            <summary>
+            编辑确定
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.TipsMessage.AddConfig(NK.ENum.Language)">
+            <summary>
+            删除
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Message.TipsMessage.NoPower(NK.ENum.Language)">
+            <summary>
+            没有执行权限
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

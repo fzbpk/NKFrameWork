@@ -1,0 +1,10 @@
+J:\Project\DotNet\NKFrameWork\UIWeb\bin\Debug\UIWeb.dll
+J:\Project\DotNet\NKFrameWork\UIWeb\bin\Debug\UIWeb.pdb
+J:\Project\DotNet\NKFrameWork\UIWeb\bin\Debug\linq2db.dll
+J:\Project\DotNet\NKFrameWork\UIWeb\bin\Debug\NKComm.dll
+J:\Project\DotNet\NKFrameWork\UIWeb\bin\Debug\NKComm.pdb
+J:\Project\DotNet\NKFrameWork\UIWeb\bin\Debug\linq2db.pdb
+J:\Project\DotNet\NKFrameWork\UIWeb\obj\Debug\UIWeb.csprojResolveAssemblyReference.cache
+J:\Project\DotNet\NKFrameWork\UIWeb\obj\Debug\UIWeb.dll
+J:\Project\DotNet\NKFrameWork\UIWeb\obj\Debug\UIWeb.pdb
+J:\Project\DotNet\NKFrameWork\UIWeb\bin\Debug\NKComm.xml

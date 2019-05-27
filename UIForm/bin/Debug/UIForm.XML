@@ -1,0 +1,278 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UIForm</name>
+    </assembly>
+    <members>
+        <member name="P:UIForm.Entity.CertificateDetailUI.Containers">
+            <summary>
+            子控件
+            </summary>
+        </member>
+        <member name="P:UIForm.Entity.CertificateDetailUI.Info">
+            <summary>
+            设置或获取信息
+            </summary>
+        </member>
+        <member name="F:UIForm.Entity.CertificateDetailUI.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:UIForm.Entity.CertificateDetailUI.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:UIForm.Entity.CertificateDetailUI.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要修改
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="P:UIForm.Entity.CertificateUI.Containers">
+            <summary>
+            子控件
+            </summary>
+        </member>
+        <member name="P:UIForm.Entity.CertificateUI.Info">
+            <summary>
+            设置或获取信息
+            </summary>
+        </member>
+        <member name="F:UIForm.Entity.CertificateUI.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:UIForm.Entity.CertificateUI.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:UIForm.Entity.CertificateUI.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要修改
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="P:UIForm.Entity.DBInfoUI.Containers">
+            <summary>
+            子控件
+            </summary>
+        </member>
+        <member name="P:UIForm.Entity.DBInfoUI.Info">
+            <summary>
+            设置或获取信息
+            </summary>
+        </member>
+        <member name="F:UIForm.Entity.DBInfoUI.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:UIForm.Entity.DBInfoUI.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:UIForm.Entity.DBInfoUI.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要修改
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="P:UIForm.Entity.DictInfoUI.Containers">
+            <summary>
+            子控件
+            </summary>
+        </member>
+        <member name="P:UIForm.Entity.DictInfoUI.Info">
+            <summary>
+            设置或获取信息
+            </summary>
+        </member>
+        <member name="F:UIForm.Entity.DictInfoUI.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:UIForm.Entity.DictInfoUI.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:UIForm.Entity.DictInfoUI.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要修改
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="P:UIForm.Entity.DisplayColumnAttributeUI.Containers">
+            <summary>
+            子控件
+            </summary>
+        </member>
+        <member name="P:UIForm.Entity.DisplayColumnAttributeUI.Info">
+            <summary>
+            设置或获取信息
+            </summary>
+        </member>
+        <member name="F:UIForm.Entity.DisplayColumnAttributeUI.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:UIForm.Entity.DisplayColumnAttributeUI.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:UIForm.Entity.DisplayColumnAttributeUI.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要修改
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="P:UIForm.Entity.IPInfoUI.Containers">
+            <summary>
+            子控件
+            </summary>
+        </member>
+        <member name="P:UIForm.Entity.IPInfoUI.Info">
+            <summary>
+            设置或获取信息
+            </summary>
+        </member>
+        <member name="F:UIForm.Entity.IPInfoUI.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:UIForm.Entity.IPInfoUI.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:UIForm.Entity.IPInfoUI.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要修改
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="P:UIForm.Entity.NetSetUI.Containers">
+            <summary>
+            子控件
+            </summary>
+        </member>
+        <member name="P:UIForm.Entity.NetSetUI.Info">
+            <summary>
+            设置或获取信息
+            </summary>
+        </member>
+        <member name="F:UIForm.Entity.NetSetUI.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:UIForm.Entity.NetSetUI.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:UIForm.Entity.NetSetUI.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要修改
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="P:UIForm.Entity.PortsSetUI.Containers">
+            <summary>
+            子控件
+            </summary>
+        </member>
+        <member name="P:UIForm.Entity.PortsSetUI.Info">
+            <summary>
+            设置或获取信息
+            </summary>
+        </member>
+        <member name="F:UIForm.Entity.PortsSetUI.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:UIForm.Entity.PortsSetUI.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:UIForm.Entity.PortsSetUI.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要修改
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="P:UIForm.Entity.ReferSetUI.Containers">
+            <summary>
+            子控件
+            </summary>
+        </member>
+        <member name="P:UIForm.Entity.ReferSetUI.Info">
+            <summary>
+            设置或获取信息
+            </summary>
+        </member>
+        <member name="F:UIForm.Entity.ReferSetUI.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:UIForm.Entity.ReferSetUI.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:UIForm.Entity.ReferSetUI.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要修改
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="P:UIForm.Entity.USBSetUI.Containers">
+            <summary>
+            子控件
+            </summary>
+        </member>
+        <member name="P:UIForm.Entity.USBSetUI.Info">
+            <summary>
+            设置或获取信息
+            </summary>
+        </member>
+        <member name="F:UIForm.Entity.USBSetUI.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:UIForm.Entity.USBSetUI.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:UIForm.Entity.USBSetUI.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要修改
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,2150 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NKData</name>
+    </assembly>
+    <members>
+        <member name="T:NK.Data.ControllerHelper">
+            <summary>
+            TSQL处理基类
+            </summary>
+        </member>
+        <member name="M:NK.Data.ControllerHelper.initialization">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="M:NK.Data.ControllerHelper.Dispose">
+            <summary>
+            释放资源
+            </summary>
+        </member>
+        <member name="M:NK.Data.ControllerHelper.Dispose(System.Boolean)">
+            <summary>
+            释放连接处理
+            </summary>
+            <param name="disposing">是否释放</param>
+        </member>
+        <member name="M:NK.Data.ControllerHelper.#ctor">
+            <summary>
+            TSQL处理基类
+            </summary>
+        </member>
+        <member name="M:NK.Data.ControllerHelper.#ctor(NK.Entity.DBInfo)">
+            <summary>
+            TSQL处理基类
+            </summary>
+        </member>
+        <member name="M:NK.Data.ControllerHelper.#ctor(NK.ENum.DBType,System.String,System.Int32)">
+            <summary>
+            TSQL处理基类
+            </summary>
+        </member>
+        <member name="P:NK.Data.ControllerHelper.KeepAlive">
+            <summary>
+            长连接/短连接
+            </summary>
+        </member>
+        <member name="P:NK.Data.ControllerHelper.DataBase">
+            <summary>
+            数据库参数
+            </summary>
+        </member>
+        <member name="P:NK.Data.ControllerHelper.DataBaseType">
+            <summary>
+            数据库连接类型
+            </summary>
+        </member>
+        <member name="P:NK.Data.ControllerHelper.Connection">
+            <summary>
+            数据库连接串
+            </summary>
+        </member>
+        <member name="P:NK.Data.ControllerHelper.Timeout">
+            <summary>
+            数据库操作超时时间
+            </summary>
+        </member>
+        <member name="P:NK.Data.ControllerHelper.language">
+            <summary>
+            显示语言
+            </summary>
+        </member>
+        <member name="M:NK.Data.ControllerHelper.CatchErr(System.String,System.String,System.Exception)">
+            <summary>
+            错误事件
+            </summary>
+            <param name="Class"></param>
+            <param name="func"></param>
+            <param name="ex"></param>
+        </member>
+        <member name="P:NK.Data.ControllerHelper.log">
+            <summary>
+            调试信息
+            </summary>
+        </member>
+        <member name="P:NK.Data.ControllerHelper.HasError">
+            <summary>
+            错误出现事件，性能参数内DEBUG设置为EVENT有效
+            </summary>
+        </member>
+        <member name="M:NK.Data.ControllerHelper.Cols(System.String)">
+            <summary>
+            获取字段
+            </summary>
+            <param name="Table"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Data.ControllerHelper.Insert(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{LinqToDB.Mapping.ColumnAttribute})">
+            <summary>
+            添加记录
+            </summary>
+            <param name="Table"></param>
+            <param name="Column"></param>
+            <param name="SCOL"></param>
+        </member>
+        <member name="M:NK.Data.ControllerHelper.Update(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{LinqToDB.Mapping.ColumnAttribute})">
+            <summary>
+            更新
+            </summary>
+            <param name="Table"></param>
+            <param name="Column"></param>
+            <param name="SCOL"></param>
+        </member>
+        <member name="M:NK.Data.ControllerHelper.Delete(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{LinqToDB.Mapping.ColumnAttribute})">
+            <summary>
+            删除记录
+            </summary>
+            <param name="Table"></param>
+            <param name="Column"></param>
+            <param name="SCOL"></param>
+        </member>
+        <member name="M:NK.Data.ControllerHelper.Creat(System.String,System.Collections.Generic.List{LinqToDB.Mapping.ColumnAttribute})">
+            <summary>
+            创建表
+            </summary>
+            <param name="Table"></param>
+            <param name="SCOL"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Data.ControllerHelper.CreatHis(System.String,System.Collections.Generic.List{LinqToDB.Mapping.ColumnAttribute},System.DateTime)">
+            <summary>
+            创建历史表
+            </summary>
+            <param name="Table"></param>
+            <param name="SCOL"></param>
+            <param name="DT"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NK.Data.DataHelper">
+            <summary>
+            Linq处理基类
+            </summary>
+        </member>
+        <member name="M:NK.Data.DataHelper.init">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="M:NK.Data.DataHelper.Dispose">
+            <summary>
+            释放资源
+            </summary>
+        </member>
+        <member name="M:NK.Data.DataHelper.Dispose(System.Boolean)">
+            <summary>
+            释放连接处理
+            </summary>
+            <param name="disposing">是否释放</param>
+        </member>
+        <member name="M:NK.Data.DataHelper.#ctor">
+            <summary>
+            Linq处理基类
+            </summary>
+        </member>
+        <member name="M:NK.Data.DataHelper.#ctor(NK.Entity.DBInfo)">
+            <summary>
+            Linq处理基类
+            </summary>
+            <param name="db"></param>
+        </member>
+        <member name="M:NK.Data.DataHelper.#ctor(NK.ENum.DBType,System.String,System.Int32)">
+            <summary>
+            Linq处理基类
+            </summary>
+            <param name="ConnectionType"></param>
+            <param name="ConnectionString"></param>
+            <param name="Timeout"></param>
+        </member>
+        <member name="P:NK.Data.DataHelper.KeepAlive">
+            <summary>
+            长连接/短连接
+            </summary>
+        </member>
+        <member name="P:NK.Data.DataHelper.DataBase">
+            <summary>
+            数据库参数
+            </summary>
+        </member>
+        <member name="P:NK.Data.DataHelper.DataBaseType">
+            <summary>
+            数据库连接类型
+            </summary>
+        </member>
+        <member name="P:NK.Data.DataHelper.Connection">
+            <summary>
+            数据库连接串
+            </summary>
+        </member>
+        <member name="P:NK.Data.DataHelper.Timeout">
+            <summary>
+            数据库操作超时时间
+            </summary>
+        </member>
+        <member name="P:NK.Data.DataHelper.language">
+            <summary>
+            显示语言
+            </summary>
+        </member>
+        <member name="M:NK.Data.DataHelper.CatchErr(System.String,System.String,System.Exception)">
+            <summary>
+            出现错误
+            </summary>
+            <param name="Class"></param>
+            <param name="func"></param>
+            <param name="ex"></param>
+        </member>
+        <member name="P:NK.Data.DataHelper.log">
+            <summary>
+            调试信息
+            </summary>
+        </member>
+        <member name="P:NK.Data.DataHelper.HasError">
+            <summary>
+            错误出现事件，性能参数内DEBUG设置为EVENT有效
+            </summary>
+        </member>
+        <member name="M:NK.Data.DataHelper.DataTableToObj(System.Data.DataTable,System.Type)">
+            <summary>
+            DATATable转对象
+            </summary>
+            <param name="DT"></param>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Data.DataHelper.DataTableToEntity``1(System.Data.DataTable)">
+            <summary>
+            DATATable转实体
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="DT"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Data.DataHelper.DataRowToobj(System.Data.DataRow,System.Type)">
+            <summary>
+            DataRow转对象
+            </summary>
+            <param name="DR"></param>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Data.DataHelper.DataRowToEntity``1(System.Data.DataRow)">
+            <summary>
+            DataRow转实体
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="DR"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Data.DataHelper.objInfoToCol(System.Object)">
+             <summary>
+            对象转字段
+             </summary>
+             <param name="entity"></param>
+             <returns></returns>
+        </member>
+        <member name="M:NK.Data.DataHelper.PropertyInfoToCol``1(``0)">
+            <summary>
+            实体转字段
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Data.DataHelper.OToSqlCreat(System.Type,System.String@)">
+            <summary>
+            获取字段
+            </summary>
+            <param name="obj"></param>
+            <param name="TableName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Data.DataHelper.EToSqlCreat``1(System.String@)">
+            <summary>
+            获取字段
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="TableName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Data.DataHelper.OTosqlModify(System.Type,System.String@,System.Collections.Generic.List{LinqToDB.Mapping.ColumnAttribute}@,System.Collections.Generic.List{LinqToDB.Mapping.ColumnAttribute}@)">
+            <summary>
+            修改
+            </summary>
+            <param name="obj"></param>
+            <param name="TableName"></param>
+            <param name="Cols"></param>
+            <param name="orgcol"></param>
+        </member>
+        <member name="M:NK.Data.DataHelper.ETosqlModify``1(System.String@,System.Collections.Generic.List{LinqToDB.Mapping.ColumnAttribute}@,System.Collections.Generic.List{LinqToDB.Mapping.ColumnAttribute}@)">
+            <summary>
+            修改
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="TableName"></param>
+            <param name="Cols"></param>
+            <param name="orgcol"></param>
+        </member>
+        <member name="M:NK.Data.DataHelper.OToSqlInsert(System.Object,System.String@)">
+            <summary>
+            添加
+            </summary>
+            <param name="entity"></param>
+            <param name="TableName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Data.DataHelper.EToSqlInsert``1(``0,System.String@)">
+            <summary>
+            添加
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="entity"></param>
+            <param name="TableName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Data.DataHelper.OToSqlInsertEX(System.Object,System.String@)">
+            <summary>
+            添加
+            </summary>
+            <param name="entity"></param>
+            <param name="TableName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Data.DataHelper.EToSqlInsertEX``1(``0,System.String@)">
+            <summary>
+            添加
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="entity"></param>
+            <param name="TableName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Data.DataHelper.OToSqlUpdate(System.Object,System.String@,System.String@)">
+            <summary>
+            编辑
+            </summary>
+            <param name="entity"></param>
+            <param name="TableName"></param>
+            <param name="where"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Data.DataHelper.EToSqlUpdate``1(``0,System.String@,System.String@)">
+            <summary>
+            编辑
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="entity"></param>
+            <param name="TableName"></param>
+            <param name="where"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Data.DataHelper.OToSqlDelete(System.Object,System.String@,System.String@)">
+            <summary>
+            删除
+            </summary>
+            <param name="entity"></param>
+            <param name="TableName"></param>
+            <param name="where"></param>
+        </member>
+        <member name="M:NK.Data.DataHelper.EToSqlDelete``1(``0,System.String@,System.String@)">
+            <summary>
+            删除
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="entity"></param>
+            <param name="TableName"></param>
+            <param name="where"></param>
+        </member>
+        <member name="M:NK.Data.DataHelper.Table``1">
+            <summary>
+            获取表名
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Data.DataHelper.Table(System.Type)">
+            <summary>
+            获取表名
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Data.DataHelper.Execute(System.String)">
+            <summary>
+            执行单条操作
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Data.DataHelper.Execute(System.String,System.Collections.Generic.Dictionary{System.Collections.Generic.KeyValuePair{System.String,LinqToDB.DataType},System.Object})">
+            <summary>
+            执行单条操作
+            </summary>
+            <param name="sql"></param>
+            <param name="Parameter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Data.DataHelper.ExecuteNonQuery(System.Collections.Generic.List{System.String})">
+            <summary>
+            执行批量处理
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Data.DataHelper.TableIsExist(System.String)">
+            <summary>
+            表是否存在
+            </summary>
+            <param name="Table"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Data.DataHelper.getTable(System.String,System.String)">
+            <summary>
+            查询
+            </summary>
+            <param name="sql"></param>
+            <param name="TableName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Data.DataHelper.getTable(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.Int32@,System.Int32@)">
+            <summary>
+            分页
+            </summary>
+            <param name="PageIndex"></param>
+            <param name="PageSize"></param>
+            <param name="DisplayField"></param>
+            <param name="TableName"></param>
+            <param name="Where"></param>
+            <param name="OrderBy"></param>
+            <param name="GroupBy"></param>
+            <param name="RecodeCount"></param>
+            <param name="PageCount"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Data.DataHelper.CheckField(System.String,System.String,System.Type@,System.Boolean@,System.Boolean@)">
+            <summary>
+            字段查询
+            </summary>
+            <param name="TableName"></param>
+            <param name="Field"></param>
+            <param name="FieldType"></param>
+            <param name="CanBeNull"></param>
+            <param name="IsPrimaryKey"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Data.DataHelper.Columns(System.String)">
+            <summary>
+            列出字段
+            </summary>
+            <param name="TableName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Data.DataHelper.Structure(System.String)">
+            <summary>
+            列出字段
+            </summary>
+            <param name="Type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Data.DataHelper.CheckDataBase(System.String@)">
+            <summary>
+            检测数据库连接
+            </summary>
+            <param name="errmsg">错误信息</param>
+            <returns>连接结果</returns>
+        </member>
+        <member name="P:NK.Data.DataHelper.CreateConnection">
+            <summary>
+            连接属性
+            </summary>
+        </member>
+        <member name="M:NK.Data.DataHelper.ExecuteNonQuery(System.String)">
+            <summary>
+            数据库Insert,update,delete带返回执行数
+            </summary>
+            <param name="sql">SQL语句</param>
+            <returns>影响数量</returns>
+        </member>
+        <member name="M:NK.Data.DataHelper.ExecuteNonQuery(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            数据库Insert,update,delete带返回执行数
+            </summary>
+            <param name="sql">SQL语句</param>
+            <returns>影响数量</returns>
+        </member>
+        <member name="T:NK.Data.DbConnectionHelper">
+            <summary>
+            ADO.NET操作类
+            </summary>
+        </member>
+        <member name="P:NK.Data.DbConnectionHelper.HasError">
+            <summary>
+            出错
+            </summary>
+        </member>
+        <member name="P:NK.Data.DbConnectionHelper.log">
+            <summary>
+            操作日志
+            </summary>
+        </member>
+        <member name="P:NK.Data.DbConnectionHelper.Connect">
+            <summary>
+            数据库连接，长连接有效
+            </summary>
+        </member>
+        <member name="P:NK.Data.DbConnectionHelper.DisConnect">
+            <summary>
+            数据库关闭，长连接有效
+            </summary>
+        </member>
+        <member name="M:NK.Data.DbConnectionHelper.initialization">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="M:NK.Data.DbConnectionHelper.End">
+            <summary>
+            执行完成
+            </summary>
+        </member>
+        <member name="M:NK.Data.DbConnectionHelper.#ctor(NK.Entity.DBInfo)">
+            <summary>
+            ADO.NET操作类
+            </summary>
+            <param name="info"></param>
+        </member>
+        <member name="M:NK.Data.DbConnectionHelper.#ctor(System.String,System.Int32)">
+            <summary>
+            ADO.NET操作类
+            </summary>
+            <param name="connection"></param>
+            <param name="Timeouts"></param>
+        </member>
+        <member name="M:NK.Data.DbConnectionHelper.#ctor(System.Data.Common.DbConnection)">
+            <summary>
+            ADO.NET操作类
+            </summary>
+            <param name="Connection"></param>
+        </member>
+        <member name="M:NK.Data.DbConnectionHelper.Dispose">
+            <summary>
+            释放资源
+            </summary>
+        </member>
+        <member name="M:NK.Data.DbConnectionHelper.Dispose(System.Boolean)">
+            <summary>
+            释放资源
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="P:NK.Data.DbConnectionHelper.DataBase">
+            <summary>
+            数据库配置
+            </summary>
+        </member>
+        <member name="P:NK.Data.DbConnectionHelper.Connection">
+            <summary>
+            连接串
+            </summary>
+        </member>
+        <member name="P:NK.Data.DbConnectionHelper.Timeout">
+            <summary>
+            超时
+            </summary>
+        </member>
+        <member name="P:NK.Data.DbConnectionHelper.KeepAlive">
+            <summary>
+            长连接
+            </summary>
+        </member>
+        <member name="M:NK.Data.DbConnectionHelper.getDataTable(System.String)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">SQL语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Data.DbConnectionHelper.getDataTable(System.String,System.Int32@)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">SQL语句</param>
+            <param name="RecCount">返回记录数</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Data.DbConnectionHelper.getDataTable(System.String,System.Int32,System.Int32@)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">SQL语句</param>
+            <param name="PageSize">分页大小</param>
+            <param name="PageCount">返回总页数</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Data.DbConnectionHelper.getDataTable(System.String,System.Int32,System.Int32@,System.Int32@,System.String)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">查询SQL</param>
+            <param name="PageSize">分页大小</param>
+            <param name="RecCount">返回查询记录数</param>
+            <param name="PageCount">返回总页数</param>
+            <param name="TableName">表名</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:NK.Data.DbConnectionHelper.getDataTable(System.String,System.Int32,System.Int32,System.Int32@,System.Int32@,System.String)">
+            <summary>
+            sql内存分页
+            </summary>
+            <param name="sql">查询SQL</param>
+            <param name="PageIndex">当前页</param>
+            <param name="PageSize">分页大小</param>
+            <param name="RecCount">返回查询记录数</param>
+            <param name="PageCount">返回总页数</param>
+            <param name="TableName">表名</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Data.DbConnectionHelper.CloseConnection(System.Data.Common.DbConnection)">
+            <summary>
+            关闭数据库连接
+            </summary>
+            <param name="conn">数据库连接</param>
+        </member>
+        <member name="M:NK.Data.DbConnectionHelper.Page(System.String,System.String,System.String,System.Int32,System.Int32@,System.Int32@)">
+            <summary>
+            获取分页部分
+            </summary>
+            <param name="TableName"></param>
+            <param name="Where"></param>
+            <param name="GroupBy"></param>
+            <param name="PageSize"></param>
+            <param name="RecodeCount"></param>
+            <param name="PageCount"></param>
+        </member>
+        <member name="T:NK.Data.DbUIControl">
+            <summary>
+            UI控件
+            </summary>
+        </member>
+        <member name="M:NK.Data.DbUIControl.Init">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="M:NK.Data.DbUIControl.#ctor">
+            <summary>
+             Linq数据库处理
+            </summary>
+        </member>
+        <member name="M:NK.Data.DbUIControl.#ctor(NK.Entity.DBInfo)">
+            <summary>
+             Linq数据库处理
+            </summary>
+            <param name="info">数据库参数</param>
+        </member>
+        <member name="M:NK.Data.DbUIControl.#ctor(NK.ENum.DBType,System.String,System.Int32)">
+            <summary>
+            Linq数据库处理
+            </summary>
+            <param name="ConnectionType">数据库类型</param>
+            <param name="ConnectionString">连接串</param>
+            <param name="Timeout">超时时间，毫秒</param>
+        </member>
+        <member name="M:NK.Data.DbUIControl.Finalize">
+            <summary>
+            释放资源
+            </summary>
+        </member>
+        <member name="M:NK.Data.DbUIControl.bingCheckButtonList(System.String,System.Windows.Forms.CheckedListBox,System.String,System.String,System.Object)">
+            <summary>
+            绑定数据到FORM CheckBoxList
+            </summary>
+            <param name="sql"></param>
+            <param name="Class"></param>
+            <param name="TextField"></param>
+            <param name="ValueField"></param>
+            <param name="defaultValue"></param>
+        </member>
+        <member name="M:NK.Data.DbUIControl.bindCheckButtonList(System.String,System.Web.UI.WebControls.CheckBoxList,System.String,System.String,System.String)">
+            <summary>
+            绑定数据到WEB CheckBoxList
+            </summary>
+            <param name="sql">T-SQL</param>
+            <param name="Class">控件</param>
+            <param name="TextField">显示列</param>
+            <param name="ValueField">值列</param>
+            <param name="defaultValue">默认值</param>
+        </member>
+        <member name="M:NK.Data.DbUIControl.bindCheckButtonList(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            绑定数据到HTML CheckBoxList
+            </summary>
+            <param name="sql">T-SQL</param>
+            <param name="Class">控件</param>
+            <param name="TextField">显示列</param>
+            <param name="ValueField">值列</param>
+            <param name="defaultValue">默认值</param>
+            <param name="CSS">CSS</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Data.DbUIControl.bindDropDownList(System.String,System.Windows.Forms.ComboBox,System.String,System.String,System.Object)">
+            <summary>
+            绑定数据到WEB DropDownList
+            </summary>
+            <param name="sql">T-SQL</param>
+            <param name="Class">控件</param>
+            <param name="TextField">显示列</param>
+            <param name="ValueField">值列</param>
+            <param name="defaultValue">默认值</param> 
+        </member>
+        <member name="M:NK.Data.DbUIControl.bindDropDownList(System.String,System.Web.UI.WebControls.DropDownList,System.String,System.String,System.String)">
+            <summary>
+            绑定数据到WEB DropDownList
+            </summary>
+            <param name="sql">T-SQL</param>
+            <param name="Class">控件</param>
+            <param name="TextField">显示列</param>
+            <param name="ValueField">值列</param>
+            <param name="defaultValue">默认值</param> 
+        </member>
+        <member name="M:NK.Data.DbUIControl.bindDropDownList(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            绑定数据到HTML DropDownList
+            </summary>
+            <param name="sql">T-SQL</param>
+            <param name="Class">控件</param>
+            <param name="TextField">显示列</param>
+            <param name="ValueField">值列</param>
+            <param name="defaultValue">默认值</param>
+            <param name="CSS">CSS</param>
+        </member>
+        <member name="M:NK.Data.DbUIControl.bindRadioButtonList(System.String,System.Windows.Forms.Panel,System.String,System.String,System.String)">
+            <summary>
+            绑定数据到FORM RadioButtonList
+            </summary>
+            <param name="sql">T-SQL</param>
+            <param name="Class">控件</param>
+            <param name="TextField">显示列</param>
+            <param name="ValueField">值列</param>
+            <param name="defaultValue">默认值</param> 
+        </member>
+        <member name="M:NK.Data.DbUIControl.bindRadioButtonList(System.String,System.Web.UI.WebControls.RadioButtonList,System.String,System.String,System.String)">
+            <summary>
+            绑定数据到WEB RadioButtonList
+            </summary>
+            <param name="sql">T-SQL</param>
+            <param name="Class">控件</param>
+            <param name="TextField">显示列</param>
+            <param name="ValueField">值列</param>
+            <param name="defaultValue">默认值</param>
+        </member>
+        <member name="M:NK.Data.DbUIControl.bindRadioButtonList(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            绑定数据到HTML RadioButtonList
+            </summary>
+            <param name="sql">T-SQL</param>
+            <param name="Class">控件</param>
+            <param name="TextField">显示列</param>
+            <param name="ValueField">值列</param>
+            <param name="defaultValue">默认值</param>
+            <param name="CSS">样式</param>
+        </member>
+        <member name="M:NK.Data.DbUIControl.bindListBox(System.String,System.Windows.Forms.ListBox,System.String,System.String,System.Object)">
+            <summary>
+            绑定数据到FORM ListBox
+            </summary>
+            <param name="sql">T-SQL</param>
+            <param name="Class">控件</param>
+            <param name="TextField">显示列</param>
+            <param name="ValueField">值列</param>
+            <param name="defaultValue">默认值</param> 
+        </member>
+        <member name="M:NK.Data.DbUIControl.bindListBox(System.String,System.Web.UI.WebControls.ListBox,System.String,System.String,System.String)">
+            <summary>
+            绑定数据到WEB ListBoxt
+            </summary>
+            <param name="sql">T-SQL</param>
+            <param name="Class">控件</param>
+            <param name="TextField">显示列</param>
+            <param name="ValueField">值列</param>
+            <param name="defaultValue">默认值</param> 
+        </member>
+        <member name="M:NK.Data.DbUIControl.bindListBox(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            绑定数据到HTML ListBoxt
+            </summary>
+            <param name="sql">T-SQL</param>
+            <param name="Class">控件</param>
+            <param name="TextField">显示列</param>
+            <param name="ValueField">值列</param>
+            <param name="defaultValue">默认值</param>
+            <param name="CSS">样式</param>
+        </member>
+        <member name="M:NK.Data.DbUIControl.bindTextBox(System.String,System.Windows.Forms.TextBox,System.String,System.String)">
+            <summary>
+            绑定数据到FORM TextBox
+            </summary>
+            <param name="sql"></param>
+            <param name="Class"></param> 
+            <param name="ValueField"></param>
+            <param name="defaultValue"></param>
+        </member>
+        <member name="M:NK.Data.DbUIControl.bindTextBox(System.String,System.Web.UI.WebControls.TextBox,System.String,System.String)">
+            <summary>
+            绑定数据到WEB TextBox
+            </summary>
+            <param name="sql">T-SQL</param>
+            <param name="Class">控件</param>
+            <param name="ValueField">值列</param>
+            <param name="defaultValue">默认值</param>
+        </member>
+        <member name="M:NK.Data.DbUIControl.bindTextBox(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            绑定数据到HTML TextBox
+            </summary>
+            <param name="sql">T-SQL</param>
+            <param name="Class">控件</param>
+            <param name="ValueField">值列</param>
+            <param name="defaultValue">默认值</param>
+            <param name="CSS">CSS</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Data.DbUIControl.bindCheckBox(System.String,System.Windows.Forms.CheckBox,System.String,System.Boolean)">
+            <summary>
+            绑定数据到FORM CheckBox
+            </summary>
+            <param name="sql"></param>
+            <param name="Class"></param> 
+            <param name="TextField"></param>
+            <param name="defaultValue"></param>
+        </member>
+        <member name="M:NK.Data.DbUIControl.bindCheckBox(System.String,System.Web.UI.WebControls.CheckBox,System.String,System.Boolean)">
+            <summary>
+            绑定数据到WEB CheckBox
+            </summary>
+            <param name="sql">T-SQL</param>
+            <param name="Class">控件</param>
+            <param name="TextField">值列</param>
+            <param name="defaultValue">默认值</param>
+        </member>
+        <member name="M:NK.Data.DbUIControl.bindCheckBox(System.String,System.String,System.String,System.String,System.Boolean,System.String)">
+            <summary>
+            绑定数据到HTML CheckBox
+            </summary>
+            <param name="sql">T-SQL</param>
+            <param name="Class">控件</param>
+            <param name="TextField">显示列</param>
+            <param name="ValueField">值列</param>
+            <param name="defaultValue">默认值</param>
+            <param name="CSS">CSS</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Data.DbUIControl.bindRadioButton(System.String,System.Windows.Forms.RadioButton,System.String,System.Boolean)">
+            <summary>
+            绑定数据到FORM RadioButton
+            </summary>
+            <param name="sql"></param>
+            <param name="Class"></param> 
+            <param name="TextField"></param>
+            <param name="defaultValue"></param>
+        </member>
+        <member name="M:NK.Data.DbUIControl.bindRadioButton(System.String,System.Web.UI.WebControls.RadioButton,System.String,System.Boolean)">
+            <summary>
+            绑定数据到WEB RadioButton
+            </summary>
+            <param name="sql">T-SQL</param>
+            <param name="Class">控件</param>
+            <param name="TextField">值列</param>
+            <param name="defaultValue">默认值</param>
+        </member>
+        <member name="M:NK.Data.DbUIControl.bindRadioButton(System.String,System.String,System.String,System.String,System.Boolean,System.String)">
+            <summary>
+            绑定数据到HTML RadioButton
+            </summary>
+            <param name="sql">T-SQL</param>
+            <param name="Class">控件</param>
+            <param name="TextField">显示列</param>
+            <param name="ValueField">值列</param>
+            <param name="defaultValue">默认值</param>
+            <param name="CSS">CSS</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Data.DbUIControl.bindLabel(System.String,System.Windows.Forms.Label,System.String)">
+            <summary>
+            绑定数据到FORM Label
+            </summary>
+            <param name="sql"></param>
+            <param name="Class"></param> 
+            <param name="TextField"></param> 
+        </member>
+        <member name="M:NK.Data.DbUIControl.bindLabel(System.String,System.Web.UI.WebControls.Label,System.String)">
+            <summary>
+            绑定数据到WEB Label
+            </summary>
+            <param name="sql">T-SQL</param>
+            <param name="Class">控件</param>
+            <param name="TextField">值列</param>
+        </member>
+        <member name="M:NK.Data.DbUIControl.bindLabel(System.String,System.String,System.String,System.String)">
+            <summary>
+            绑定数据到HTML Label
+            </summary>
+            <param name="sql">T-SQL</param>
+            <param name="Class">控件</param>
+            <param name="TextField">显示列</param> 
+            <param name="CSS">CSS</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Data.DbUIControl.bindHyLinkLabel(System.String,System.Windows.Forms.LinkLabel,System.String,System.String)">
+            <summary>
+            绑定数据到FORM HyLinkLabel
+            </summary>
+            <param name="sql"></param>
+            <param name="Class"></param> 
+            <param name="TextField"></param> 
+            <param name="ValueField"></param> 
+        </member>
+        <member name="M:NK.Data.DbUIControl.bindHyLinkLabel(System.String,System.Web.UI.WebControls.HyperLink,System.String,System.String)">
+            <summary>
+            绑定数据到WEB HyperLink
+            </summary>
+            <param name="sql">T-SQL</param>
+            <param name="Class">控件</param>
+            <param name="TextField">显示列</param>
+            <param name="ValueField">值列</param>
+        </member>
+        <member name="M:NK.Data.DbUIControl.bindHyLinkLabel(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            绑定数据到HTML HyLinkLabel
+            </summary>
+            <param name="sql">T-SQL</param>
+            <param name="Class">控件</param>
+            <param name="TextField">显示列</param> 
+            <param name="ValueField">值列</param> 
+            <param name="CSS">CSS</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Data.DbUIControl.bindHidenLabel(System.String,System.Windows.Forms.Label,System.String,System.String)">
+            <summary>
+            绑定数据到FORM Label
+            </summary>
+            <param name="sql"></param>
+            <param name="Class"></param> 
+            <param name="ValueField"></param> 
+            <param name="defaultValue">默认值</param>
+        </member>
+        <member name="M:NK.Data.DbUIControl.bindHidenLabel(System.String,System.Web.UI.WebControls.HiddenField,System.String,System.String)">
+            <summary>
+            绑定数据到WEB TextBox
+            </summary>
+            <param name="sql">T-SQL</param>
+            <param name="Class">控件</param>
+            <param name="ValueField">值列</param>
+            <param name="defaultValue">默认值</param>
+        </member>
+        <member name="M:NK.Data.DbUIControl.bindHidenLabel(System.String,System.String,System.String,System.String)">
+            <summary>
+            绑定数据到HTML TextBox
+            </summary>
+            <param name="sql">T-SQL</param>
+            <param name="Class">控件</param>
+            <param name="ValueField">显示列</param> 
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="T:NK.Data.IDataBase">
+            <summary>
+            数据库T-SQL操作
+            </summary> 
+        </member>
+        <member name="M:NK.Data.IDataBase.Init">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="M:NK.Data.IDataBase.#ctor">
+            <summary>
+            数据库T-SQL基本操作
+            </summary>
+        </member>
+        <member name="M:NK.Data.IDataBase.#ctor(NK.Entity.DBInfo)">
+            <summary>
+            数据库T-SQL基本操作
+            </summary>
+        </member>
+        <member name="M:NK.Data.IDataBase.#ctor(NK.ENum.DBType,System.String,System.Int32)">
+            <summary>
+            数据库T-SQL基本操作
+            </summary>
+            <param name="ConnectionType">数据库类型</param>
+            <param name="ConnectionString">连接串</param>
+            <param name="Timeout">超时时间，毫秒</param>
+        </member>
+        <member name="M:NK.Data.IDataBase.Finalize">
+            <summary>
+            释放资源
+            </summary>
+        </member>
+        <member name="M:NK.Data.IDataBase.TableIsExist(System.String)">
+            <summary>
+            查询表是否存在
+            </summary>
+            <param name="TableName">表名称</param>
+            <returns>是否存在</returns>
+        </member>
+        <member name="M:NK.Data.IDataBase.CheckField(System.String,System.String,System.Type@,System.Boolean@,System.Boolean@)">
+            <summary>
+            查询字段属性
+            </summary>
+            <param name="TableName">表名</param>
+            <param name="Field">字段名</param>
+            <param name="FieldType">字段类型</param>
+            <param name="CanBeNull">可空</param>
+            <param name="IsPrimaryKey">主键</param>
+            <returns>true 字段存在，false 字段不存在</returns>
+        </member>
+        <member name="M:NK.Data.IDataBase.IsExist(System.String)">
+            <summary>
+            判断是否存在记录
+            </summary>
+            <param name="sql">T-SQL</param>
+            <returns>TRUE为存在，False为不存在</returns>
+        </member>
+        <member name="M:NK.Data.IDataBase.Find(System.String)">
+            <summary>
+            查询数据记录
+            </summary>
+            <param name="sql">T-SQL</param>
+            <returns>TRUE为存在，False为不存在</returns>
+        </member>
+        <member name="M:NK.Data.IDataBase.ExecuteScalar(System.String)">
+            <summary>
+            返回第一行第一列数据
+            </summary>
+            <param name="sql">T-SQL</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Data.IDataBase.getDataTable(System.String)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">T-SQL</param>
+            <returns>DataTable</returns>
+        </member>
+        <member name="M:NK.Data.IDataBase.getDataTable(System.String,System.Int32,System.Int32@,System.Int32@,System.String)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">T-SQL</param>
+            <param name="PageSize">分页大小</param>
+            <param name="RecCount">返回查询记录数</param>
+            <param name="PageCount">返回总页数</param>
+            <param name="TableName">表名</param>
+            <returns>DataTable</returns>
+        </member>
+        <member name="M:NK.Data.IDataBase.getDataTable(System.String,System.Int32,System.Int32,System.Int32@,System.Int32@,System.String)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">T-SQL</param>
+            <param name="PageIndex">当前页</param>
+            <param name="PageSize">分页大小</param>
+            <param name="RecCount">返回查询记录数</param>
+            <param name="PageCount">返回总页数</param>
+            <param name="TableName">表名</param>
+            <returns>DataTable</returns>
+        </member>
+        <member name="M:NK.Data.IDataBase.getDataTableByRam(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.Int32@,System.Int32@)">
+            <summary>
+            内存分页
+            </summary>
+            <param name="PageIndex">当前页</param>
+            <param name="PageSize">分页大小</param>
+            <param name="DisplayField">字段列，每个字段用,分开</param>
+            <param name="TableName">表名，支持（） k 视图方式</param>
+            <param name="Where">查询条件</param>
+            <param name="OrderBy">排序语句</param>
+            <param name="GroupBy">GROUP BY 字段</param>
+            <param name="RecodeCount">返回记录数</param>
+            <param name="PageCount">返回页数</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:NK.Data.IDataBase.getDataTableByDB(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32@,System.Int32@)">
+            <summary>
+            数据库分页
+            </summary>
+            <param name="PageIndex">当前页</param>
+            <param name="PageSize">分页大小</param>
+            <param name="DisplayField">字段列，每个字段用,分开</param>
+            <param name="TableName">表名，支持（） k 视图方式</param>
+            <param name="Where">查询条件</param>
+            <param name="OrderField">排序字段</param>
+            <param name="OrderBy">排序语句</param>
+            <param name="GroupBy">GROUP BY 字段</param>
+            <param name="RecodeCount">返回记录数</param>
+            <param name="PageCount">返回页数</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="P:NK.Data.IDataBase.Tables">
+            <summary>
+            获取所有表
+            </summary>
+        </member>
+        <member name="P:NK.Data.IDataBase.Views">
+            <summary>
+            获取所有视图
+            </summary>
+        </member>
+        <member name="M:NK.Data.IDataBase.Columns(System.String)">
+            <summary>
+            列出表字段
+            </summary>
+            <param name="TableName">表名</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Data.IDataBase.CheckDataBase(System.String@)">
+            <summary>
+            检测数据库连接
+            </summary>
+            <param name="errmsg">错误信息</param>
+            <returns>连接结果</returns>
+        </member>
+        <member name="P:NK.Data.IDataBase.CreateConnection">
+            <summary>
+            连接属性
+            </summary>
+        </member>
+        <member name="M:NK.Data.IDataBase.ExecuteNonQuery(System.String)">
+            <summary>
+            数据库Insert,update,delete带返回执行数
+            </summary>
+            <param name="sql">SQL语句</param>
+            <returns>影响数量</returns>
+        </member>
+        <member name="P:NK.Data.IDataBase.Connect">
+            <summary>
+            连接处理事件
+            </summary>
+        </member>
+        <member name="P:NK.Data.IDataBase.DisConnect">
+            <summary>
+            断开处理事件
+            </summary>
+        </member>
+        <member name="T:NK.Data.ConnectionHelper">
+            <summary>
+            连接串生成类
+            </summary>
+        </member>
+        <member name="M:NK.Data.ConnectionHelper.IsDBEnable(NK.Entity.DBInfo)">
+            <summary>
+            是否启用数据库配置
+            </summary>
+            <param name="info">数据库信息</param>
+            <returns>是否启用数据库配置</returns>
+        </member>
+        <member name="M:NK.Data.ConnectionHelper.getDbDriver(NK.Entity.DBInfo)">
+            <summary>
+             数据库驱动
+            </summary>
+            <param name="info">数据库信息</param>
+            <returns>数据库驱动</returns>
+        </member>
+        <member name="M:NK.Data.ConnectionHelper.getDbUrl(NK.Entity.DBInfo)">
+            <summary>
+             数据库地址
+            </summary>
+            <param name="info">数据库信息</param>
+            <returns>数据库地址</returns>
+        </member>
+        <member name="M:NK.Data.ConnectionHelper.getDbPort(NK.Entity.DBInfo)">
+            <summary>
+             数据库端口
+            </summary>
+            <param name="info">数据库信息</param>
+            <returns>数据库端口</returns>
+        </member>
+        <member name="M:NK.Data.ConnectionHelper.getDbUser(NK.Entity.DBInfo)">
+            <summary>
+             数据库账号
+            </summary>
+            <param name="info">数据库信息</param>
+            <returns>数据库账号</returns>
+        </member>
+        <member name="M:NK.Data.ConnectionHelper.getDbPassword(NK.Entity.DBInfo)">
+            <summary>
+             数据库密码
+            </summary>
+            <param name="info">数据库信息</param>
+            <returns>数据库密码</returns>
+        </member>
+        <member name="M:NK.Data.ConnectionHelper.getDbName(NK.Entity.DBInfo)">
+            <summary>
+             数据库类型
+            </summary>
+            <param name="info">数据库信息</param>
+            <returns>数据库类型</returns>
+        </member>
+        <member name="M:NK.Data.ConnectionHelper.getDbTimeout(NK.Entity.DBInfo)">
+            <summary>
+             数据库超时
+            </summary>
+            <param name="info">数据库信息</param>
+            <returns>数据库超时</returns>
+        </member>
+        <member name="M:NK.Data.ConnectionHelper.getDbCharset(NK.Entity.DBInfo)">
+            <summary>
+             数据库编码
+            </summary>
+            <param name="info">数据库信息</param>
+            <returns>数据库编码</returns>
+        </member>
+        <member name="M:NK.Data.ConnectionHelper.ConnectionString(NK.Entity.DBInfo)">
+            <summary>
+            数据库连接串
+            </summary>
+            <param name="info">数据库信息</param>
+            <returns>连接串</returns>
+        </member>
+        <member name="T:NK.Data.LinqExpression">
+            <summary>
+            Lamda表达式扩展
+            </summary>
+        </member>
+        <member name="M:NK.Data.LinqExpression.OrderbyToSql(System.Linq.Expressions.Expression)">
+            <summary>
+            排序表达式转T-SQL
+            </summary>
+            <param name="OrderBy">表达式</param>
+            <returns>T-SQL</returns>
+        </member>
+        <member name="M:NK.Data.LinqExpression.WhereToSQL(System.Linq.Expressions.Expression)">
+            <summary>
+            查询表达式转T-SQL
+            </summary>
+            <param name="Where">查询表达式</param>
+            <returns>T-SQL </returns>
+        </member>
+        <member name="M:NK.Data.LinqExpression.True``1">
+            <summary>
+            新建TRUE表达式
+            </summary>
+            <typeparam name="T">泛型</typeparam>
+            <returns>表达式</returns>
+        </member>
+        <member name="M:NK.Data.LinqExpression.False``1">
+            <summary>
+            新建TRUE表达式
+            </summary>
+            <typeparam name="T">泛型</typeparam>
+            <returns>表达式</returns>
+        </member>
+        <member name="M:NK.Data.LinqExpression.True``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+            <summary>
+                true    
+            </summary>
+            <typeparam name="T">泛型</typeparam>
+            <param name="expr">表达式</param>
+            <returns>TRUE表达式</returns>
+        </member>
+        <member name="M:NK.Data.LinqExpression.False``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+            <summary>
+            false
+            </summary>
+            <typeparam name="T">泛型</typeparam>
+            <param name="expr">表达式</param>
+            <returns>False表达式</returns>
+        </member>
+        <member name="M:NK.Data.LinqExpression.Or``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+            <summary>
+            AND连接
+            </summary>
+            <typeparam name="T">泛型</typeparam>
+            <param name="expr1">表达式1</param>
+            <param name="expr2">表达式2</param>
+            <returns>合并后AND表达式</returns>
+        </member>
+        <member name="M:NK.Data.LinqExpression.And``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+            <summary>
+            OR 连接
+            </summary>
+            <typeparam name="T">泛型</typeparam>
+            <param name="expr1">表达式1</param>
+            <param name="expr2">表达式2</param>
+            <returns>合并后OR表达式</returns>
+        </member>
+        <member name="M:NK.Data.LinqExpression.Not``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+            <summary>
+            表达式取反
+            </summary>
+            <typeparam name="T">泛型</typeparam>
+            <param name="expr">表达式1</param>
+            <returns>表达式取反</returns>
+        </member>
+        <member name="M:NK.Data.LinqExpression.OrderExpression``2(System.String)">
+            <summary>
+            创建lambda表达式：p=>p.propertyName
+            </summary>
+            <typeparam name="T"></typeparam>
+            <typeparam name="TKey"></typeparam>
+            <param name="propertyName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Data.LinqExpression.OrderExpression``2(System.Reflection.PropertyInfo)">
+            <summary>
+            创建lambda表达式：p=>p.propertyName
+            </summary>
+            <typeparam name="T"></typeparam>
+            <typeparam name="TKey"></typeparam>
+            <param name="property"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Data.LinqExpression.Page``1(System.Linq.IQueryable{``0},System.Int32,System.Int32,System.Int32@,System.Int32@)">
+            <summary>
+            分页
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="Linq"></param>
+            <param name="PageIndex"></param>
+            <param name="PageSize"></param>
+            <param name="PageCount"></param>
+            <param name="RecordCount"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NK.Data.TSQLHelper">
+            <summary>
+            TSQL扩展
+            </summary>
+        </member>
+        <member name="M:NK.Data.TSQLHelper.KeyToSql(System.String,System.Linq.Expressions.ExpressionType,System.Object)">
+            <summary>
+            字段转T-SQL
+            </summary>
+            <param name="Key">字段</param>
+            <param name="Mode">运算类型</param>
+            <param name="Value">字段值</param>
+            <returns>T-SQL</returns>
+        </member>
+        <member name="M:NK.Data.TSQLHelper.JoinToSql(System.String,System.Linq.Expressions.ExpressionType,System.String)">
+            <summary>
+            T-SQL合并
+            </summary>
+            <param name="sql1">语句1</param>
+            <param name="Mode">运算类型</param>
+            <param name="sql2">语句2</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Data.TSQLHelper.NotToSql(System.String)">
+            <summary>
+            T-SQL取反
+            </summary>
+            <param name="sql">语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Data.TSQLHelper.WhereToSql(System.Collections.Generic.Dictionary{System.String,System.Object},System.Linq.Expressions.ExpressionType,System.Linq.Expressions.ExpressionType)">
+            <summary>
+            条件语句合成
+            </summary>
+            <param name="Column">字段，字段值</param>
+            <param name="CVMode">字段与其值的运算</param>
+            <param name="CCMode">字段间逻辑运算</param>
+            <returns>不带WHERE关键字的条件语句</returns>
+        </member>
+        <member name="M:NK.Data.TSQLHelper.OrderbyToSql(System.Collections.Generic.Dictionary{System.String,System.Boolean})">
+            <summary>
+            合成ORDER语句
+            </summary>
+            <param name="Column">字段，字段顺序倒序</param>
+            <returns>不带ORDERBY关键字的ORDERBY语句</returns>
+        </member>
+        <member name="M:NK.Data.TSQLHelper.SelectToSql(System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+            查询语句合成T-SQL
+            </summary>
+            <param name="TableName">表名</param>
+             <param name="Column">字段，字段顺序倒序</param>
+            <returns>T-SQL</returns>
+        </member>
+        <member name="M:NK.Data.TSQLHelper.InsertToSQL(System.String,NK.ENum.DBType,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            合成添加记录T-SQL
+            </summary>
+            <param name="TableName">表名</param>
+            <param name="Mode">数据库类型</param>
+            <param name="Column">字段，字段值</param> 
+            <returns>T-SQL</returns>
+        </member>
+        <member name="M:NK.Data.TSQLHelper.InsertToSQLEX(System.String,NK.ENum.DBType,System.Collections.Generic.Dictionary{System.Collections.Generic.KeyValuePair{System.String,LinqToDB.DataType},System.Object},System.Collections.Generic.Dictionary{System.Collections.Generic.KeyValuePair{System.String,LinqToDB.DataType},System.Object}@)">
+            <summary>
+            合成添加记录T-SQL
+            </summary>
+            <param name="TableName"></param>
+            <param name="Mode"></param>
+            <param name="Column"></param>
+            <param name="Parameter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Data.TSQLHelper.UpdateToSQL(System.String,NK.ENum.DBType,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            合成更改记录T-SQL
+            </summary>
+            <param name="TableName">表名</param>
+            <param name="Mode">数据库类型</param>
+            <param name="Column">字段，字段值</param>
+            <returns>T-SQL</returns>
+        </member>
+        <member name="M:NK.Data.TSQLHelper.UpdateToSQLEX(System.String,NK.ENum.DBType,System.Collections.Generic.Dictionary{System.Collections.Generic.KeyValuePair{System.String,LinqToDB.DataType},System.Object},System.Collections.Generic.Dictionary{System.Collections.Generic.KeyValuePair{System.String,LinqToDB.DataType},System.Object}@)">
+            <summary>
+            合成更改记录T-SQL
+            </summary>
+            <param name="TableName">表名</param>
+            <param name="Mode">数据库类型</param>
+            <param name="Column">字段，字段值</param>
+            <param name="Parameter">参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Data.TSQLHelper.DeleteToSQL(System.String)">
+            <summary>
+            合成删除记录T-SQL
+            </summary>
+            <param name="TableName">表名</param>
+            <returns>T-SQL</returns>
+        </member>
+        <member name="M:NK.Data.TSQLHelper.CreatToSql(System.String,NK.ENum.DBType,System.Collections.Generic.List{LinqToDB.Mapping.ColumnAttribute})">
+            <summary>
+            合成创建表T-SQL
+            </summary>
+            <param name="TableName">表</param>
+            <param name="Mode">数据库类型</param>
+            <param name="Columns">字段</param>
+            <returns>T-SQL</returns>
+        </member>
+        <member name="M:NK.Data.TSQLHelper.DropToSql(System.String)">
+            <summary>
+            删除表T-SQL
+            </summary>
+            <param name="TableName">表名</param>
+            <returns>T-SQL</returns>
+        </member>
+        <member name="M:NK.Data.TSQLHelper.ModifyToSql(System.String,NK.ENum.DBType,System.Collections.Generic.List{LinqToDB.Mapping.ColumnAttribute},System.Collections.Generic.List{LinqToDB.Mapping.ColumnAttribute})">
+            <summary>
+            修改表T-SQL
+            </summary>
+            <param name="TableName"></param>
+            <param name="Mode"></param>
+            <param name="Columns"></param>
+            <param name="OrgCol"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Data.TSQLHelper.CreatViewToSql(System.String,System.String)">
+            <summary>
+            创建视图
+            </summary>
+            <param name="ViewName">视图名</param>
+            <param name="tsql">查询语句</param>
+            <returns>TSQL</returns>
+        </member>
+        <member name="M:NK.Data.TSQLHelper.DropViewToSql(System.String)">
+            <summary>
+            删除视图
+            </summary>
+            <param name="ViewName">视图名</param>
+            <returns>TSQL</returns>
+        </member>
+        <member name="M:NK.Data.TSQLHelper.SimViewToSql(System.String)">
+            <summary>
+            查询语句模拟为视图
+            </summary>
+            <param name="TSQL">查询语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Data.TSQLHelper.UnionToSql(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String},System.Boolean)">
+            <summary>
+            拼接视图合成T-SQL
+            </summary>
+            <param name="Table">表名</param>
+            <param name="Column">显示字段</param>
+            <param name="IsUnique">数据是否重复</param>
+            <returns>T-SQL</returns>
+        </member>
+        <member name="T:NK.Event.DBEvent">
+            <summary>
+            数据库事件
+            </summary>
+        </member>
+        <member name="T:NK.Event.DBEvent.Connect">
+            <summary>
+            连接事件
+            </summary>
+            <param name="Cfg">配置信息</param> 
+        </member>
+        <member name="T:NK.Event.DBEvent.DisConnect">
+            <summary>
+            断开连接事件
+            </summary>
+            <param name="Cfg">配置信息</param> 
+        </member>
+        <member name="T:NK.EntityEX">
+            <summary>
+            实体扩展类
+            </summary>
+        </member>
+        <member name="M:NK.EntityEX.ToTableName(System.Object)">
+            <summary>
+            获取表名
+            </summary>
+            <param name="obj">实体</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.EntityEX.ToTableName(System.Type)">
+            <summary>
+            获取表名
+            </summary>
+            <param name="obj">实体</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.EntityEX.ToProperty(System.Object)">
+            <summary>
+            获取实体属性和值
+            </summary>
+            <param name="obj">实体</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.EntityEX.ToProperty(System.Type)">
+            <summary>
+            获取实体属性和值
+            </summary>
+            <param name="obj">实体</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.EntityEX.ToDispProperty(System.Object)">
+            <summary>
+            获取实体显示属性和值
+            </summary>
+            <param name="obj">实体</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.EntityEX.ToDispProperty(System.Type)">
+            <summary>
+            获取实体显示属性和值
+            </summary>
+            <param name="obj">实体</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.EntityEX.ToColumnDictionary(System.Object)">
+            <summary>
+            获取实体属性和值
+            </summary>
+            <param name="obj">实体</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.EntityEX.ToDispDictionary(System.Object)">
+            <summary>
+            获取实体显示属性和值
+            </summary>
+            <param name="obj">实体</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.EntityEX.FromDictionary(System.Object,System.Collections.Generic.Dictionary{NK.Attribut.DisplayColumnAttribute,System.Object})">
+            <summary>
+            实体赋值
+            </summary>
+            <param name="obj">实体</param>
+            <param name="Value">值</param>
+        </member>
+        <member name="M:NK.EntityEX.FromDictionary(System.Object,System.Collections.Generic.Dictionary{LinqToDB.Mapping.ColumnAttribute,System.Object})">
+            <summary>
+            实体赋值
+            </summary>
+            <param name="obj">实体</param>
+            <param name="Value">值</param>
+        </member>
+        <member name="T:NK.EntityProperty">
+            <summary>
+            实体属性扩展
+            </summary>
+        </member>
+        <member name="M:NK.EntityProperty.ToColumnName(System.Reflection.PropertyInfo)">
+            <summary>
+            获取实体属性字段名
+            </summary>
+            <param name="property"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.EntityProperty.IsPrimaryKey(System.Reflection.PropertyInfo)">
+            <summary>
+            是否主键
+            </summary>
+            <param name="property"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.EntityProperty.IsIdentity(System.Reflection.PropertyInfo)">
+            <summary>
+            是否自增量
+            </summary>
+            <param name="property"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.EntityProperty.CanBeNull(System.Reflection.PropertyInfo)">
+            <summary>
+            是否可空
+            </summary>
+            <param name="property"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.EntityProperty.CanCount(System.Reflection.PropertyInfo)">
+            <summary>
+            是否统计
+            </summary>
+            <param name="property"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.EntityProperty.CanDeitail(System.Reflection.PropertyInfo)">
+            <summary>
+            是否详细页
+            </summary>
+            <param name="property"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.EntityProperty.CanHead(System.Reflection.PropertyInfo)">
+            <summary>
+            是否用于表头
+            </summary>
+            <param name="property"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.EntityProperty.CanImpExpead(System.Reflection.PropertyInfo)">
+            <summary>
+            是否用于导入导出
+            </summary>
+            <param name="property"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.EntityProperty.CanSearch(System.Reflection.PropertyInfo)">
+            <summary>
+            是否用于搜索
+            </summary>
+            <param name="property"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.EntityProperty.CSS(System.Reflection.PropertyInfo)">
+            <summary>
+            是否用于CSS
+            </summary>
+            <param name="property"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.EntityProperty.Format(System.Reflection.PropertyInfo)">
+            <summary>
+            显示格式
+            </summary>
+            <param name="property"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.EntityProperty.JS(System.Reflection.PropertyInfo)">
+            <summary>
+            JS函数
+            </summary>
+            <param name="property"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.EntityProperty.Seqencing(System.Reflection.PropertyInfo)">
+            <summary>
+            排序
+            </summary>
+            <param name="property"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.EntityProperty.Unit(System.Reflection.PropertyInfo)">
+            <summary>
+            单位
+            </summary>
+            <param name="property"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.EntityProperty.IsUnique(System.Reflection.PropertyInfo)">
+            <summary>
+            是否唯一
+            </summary>
+            <param name="property"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NK.Interface.iDataBase">
+            <summary>
+            数据库接口
+            </summary>
+        </member>
+        <member name="P:NK.Interface.iDataBase.DataBase">
+            <summary>
+            数据库信息
+            </summary>
+        </member>
+        <member name="P:NK.Interface.iDataBase.Connection">
+            <summary>
+            连接参数
+            </summary>
+        </member>
+        <member name="P:NK.Interface.iDataBase.Timeout">
+            <summary>
+            超时
+            </summary>
+        </member>
+        <member name="P:NK.Interface.iDataBase.Tables">
+            <summary>
+            获取所有表
+            </summary>
+        </member>
+        <member name="P:NK.Interface.iDataBase.Views">
+            <summary>
+            获取所有视图
+            </summary>
+        </member>
+        <member name="P:NK.Interface.iDataBase.KeepAlive">
+            <summary>
+            长连接/短连接
+            </summary>
+        </member>
+        <member name="M:NK.Interface.iDataBase.Dispose">
+            <summary>
+            释放
+            </summary>
+        </member>
+        <member name="M:NK.Interface.iDataBase.GetConnection">
+            <summary>
+            连接数据库
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Interface.iDataBase.CloseConnection(System.Data.Common.DbConnection)">
+            <summary>
+            数据库连接关闭
+            </summary>
+            <param name="conn">打开的数据库连接</param>
+        </member>
+        <member name="M:NK.Interface.iDataBase.CheckConnection(System.String@)">
+            <summary>
+            检查数据库连接是否连接成功
+            </summary>
+            <param name="ErrMsg">错误信息</param>
+            <returns>是否连接成功</returns>
+        </member>
+        <member name="M:NK.Interface.iDataBase.ExecuteNonQuery(System.String)">
+            <summary>
+            数据库Insert,update,delete带返回执行数
+            </summary>
+            <param name="sql">SQL语句</param>
+            <returns>影响数量</returns>
+        </member>
+        <member name="M:NK.Interface.iDataBase.getDataTable(System.String)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">SQL语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Interface.iDataBase.getDataTable(System.String,System.Int32@)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">SQL语句</param>
+            <param name="RecCount">返回记录数</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Interface.iDataBase.getDataTable(System.String,System.Int32,System.Int32@)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">SQL语句</param>
+            <param name="PageSize">分页大小</param>
+            <param name="PageCount">返回总页数</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Interface.iDataBase.getDataTable(System.String,System.Int32,System.Int32@,System.Int32@,System.String)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">查询SQL</param>
+            <param name="PageSize">分页大小</param>
+            <param name="RecCount">返回查询记录数</param>
+            <param name="PageCount">返回总页数</param>
+            <param name="TableName">表名</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:NK.Interface.iDataBase.getDataTable(System.String,System.Int32,System.Int32,System.Int32@,System.Int32@,System.String)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">查询SQL</param>
+            <param name="PageIndex">当前页</param>
+            <param name="PageSize">分页大小</param>
+            <param name="RecCount">返回查询记录数</param>
+            <param name="PageCount">返回总页数</param>
+            <param name="TableName">表名</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:NK.Interface.iDataBase.IsExist(System.String)">
+            <summary>
+            判断是否存在记录
+            </summary>
+            <param name="sql">查询数据库</param>
+            <returns>Boolean,TRUE为存在，False为不存在</returns>
+        </member>
+        <member name="M:NK.Interface.iDataBase.Find(System.String)">
+            <summary>
+            查询数据记录
+            </summary>
+            <param name="sql">查询SQL</param>
+            <returns>返回第一行查询数据</returns>
+        </member>
+        <member name="M:NK.Interface.iDataBase.ExecuteScalar(System.String)">
+            <summary>
+            查询记录
+            </summary>
+            <param name="sql">查询SQL</param>
+            <returns>返回第一行第一列数据</returns>
+        </member>
+        <member name="M:NK.Interface.iDataBase.TableIsExist(System.String)">
+            <summary>
+            查询表是否存在
+            </summary>
+            <param name="TableName">表名 </param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Interface.iDataBase.CheckField(System.String,System.String,System.Type@,System.Boolean@,System.Boolean@)">
+            <summary>
+            查询字段属性
+            </summary>
+            <param name="TableName">表名</param>
+            <param name="Field">字段名</param>
+            <param name="FieldType">字段类型</param>
+            <param name="CanBeNull">非空</param>
+            <param name="IsPrimaryKey">主键</param>
+            <returns>true 字段存在，false 字段不存在</returns>
+        </member>
+        <member name="M:NK.Interface.iDataBase.getDataTableByRam(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.Int32@,System.Int32@)">
+            <summary>
+            利用内存分页因此适合数据小但SQL语句复杂的查询
+            </summary>
+            <param name="PageIndex">当前页</param>
+            <param name="PageSize">分页大小</param>
+            <param name="DisplayField">字段列，每个字段用,分开</param>
+            <param name="TableName">表名，支持（） k 视图方式</param>
+            <param name="Where">查询条件，不带关键字WHERE</param>
+            <param name="OrderBy">排序语句，带order by</param>
+            <param name="GroupBy">GROUP BY 字段，不带关键字GROUP BY</param>
+            <param name="RecodeCount">返回总记录数</param>
+            <param name="PageCount">返回总记录数</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:NK.Interface.iDataBase.getDataTableByDB(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32@,System.Int32@)">
+            <summary>
+            利用数据库分页因此适合数据小但SQL语句复杂的查询
+            </summary>
+            <param name="PageIndex">当前页</param>
+            <param name="PageSize">分页大小</param>
+            <param name="DisplayField">字段列，每个字段用,分开</param>
+            <param name="TableName">表名，支持（） k 视图方式</param>
+            <param name="Where">查询条件，不带关键字WHERE</param>
+            <param name="OrderBy">排序语句，带order by</param>
+            <param name="OrderField">排序字段</param>
+            <param name="GroupBy">GROUP BY 字段，不带关键字GROUP BY</param>
+            <param name="RecodeCount">返回总记录数</param>
+            <param name="PageCount">返回总记录数</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:NK.Interface.iDataBase.Columns(System.String)">
+            <summary>
+            列出表字段
+            </summary>
+            <param name="TableName">表名</param>
+            <returns></returns>
+        </member>
+        <member name="T:NK.Interface.iTransaction">
+            <summary>
+            数据库事务
+            </summary>
+        </member>
+        <member name="P:NK.Interface.iTransaction.DataBase">
+            <summary>
+            数据库信息
+            </summary>
+        </member>
+        <member name="P:NK.Interface.iTransaction.Connection">
+            <summary>
+            连接参数
+            </summary>
+        </member>
+        <member name="P:NK.Interface.iTransaction.Timeout">
+            <summary>
+            超时
+            </summary>
+        </member>
+        <member name="P:NK.Interface.iTransaction.Tables">
+            <summary>
+            获取所有表
+            </summary>
+        </member>
+        <member name="P:NK.Interface.iTransaction.Views">
+            <summary>
+            获取所有视图
+            </summary>
+        </member>
+        <member name="P:NK.Interface.iTransaction.KeepAlive">
+            <summary>
+            长连接/短连接
+            </summary>
+        </member>
+        <member name="M:NK.Interface.iTransaction.Dispose">
+            <summary>
+            释放
+            </summary>
+        </member>
+        <member name="M:NK.Interface.iTransaction.GetConnection">
+            <summary>
+            连接数据库
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Interface.iTransaction.CheckConnection(System.String@)">
+            <summary>
+            检查数据库连接是否连接成功
+            </summary>
+            <param name="ErrMsg">错误信息</param>
+            <returns>是否连接成功</returns>
+        </member>
+        <member name="M:NK.Interface.iTransaction.ExecuteNonQuery(System.String)">
+            <summary>
+            数据库Insert,update,delete 
+            </summary>
+            <param name="sql">SQL语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Interface.iTransaction.getDataTable(System.String)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">SQL语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Interface.iTransaction.getDataTable(System.String,System.Int32@)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">SQL语句</param>
+            <param name="RecCount">返回记录数</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Interface.iTransaction.getDataTable(System.String,System.Int32,System.Int32@)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">SQL语句</param>
+            <param name="PageSize">分页大小</param>
+            <param name="PageCount">返回总页数</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Interface.iTransaction.getDataTable(System.String,System.Int32,System.Int32@,System.Int32@,System.String)">
+            <summary>
+            获取查询数据
+            </summary>
+            <param name="sql">查询SQL</param>
+            <param name="PageSize">分页大小</param>
+            <param name="RecCount">返回查询记录数</param>
+            <param name="PageCount">返回总页数</param>
+            <param name="TableName">表名</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:NK.Interface.iTransaction.IsExist(System.String)">
+            <summary>
+            判断是否存在记录
+            </summary>
+            <param name="sql">查询数据库</param>
+            <returns>Boolean,TRUE为存在，False为不存在</returns>
+        </member>
+        <member name="M:NK.Interface.iTransaction.Find(System.String)">
+            <summary>
+            查询数据记录
+            </summary>
+            <param name="sql">查询SQL</param>
+            <returns>返回第一行查询数据</returns>
+        </member>
+        <member name="M:NK.Interface.iTransaction.ExecuteScalar(System.String)">
+            <summary>
+            查询记录
+            </summary>
+            <param name="sql">查询SQL</param>
+            <returns>返回第一行第一列数据</returns>
+        </member>
+        <member name="M:NK.Interface.iTransaction.TableIsExist(System.String)">
+            <summary>
+            查询表是否存在
+            </summary>
+            <param name="TableName">表名 </param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Interface.iTransaction.CheckField(System.String,System.String,System.Type@,System.Boolean@,System.Boolean@)">
+            <summary>
+            查询字段属性
+            </summary>
+            <param name="TableName">表名</param>
+            <param name="Field">字段名</param>
+            <param name="FieldType">字段类型</param>
+            <param name="CanBeNull">非空</param>
+            <param name="IsPrimaryKey">主键</param>
+            <returns>true 字段存在，false 字段不存在</returns>
+        </member>
+        <member name="M:NK.Interface.iTransaction.getDataTableByRam(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.Int32@,System.Int32@)">
+            <summary>
+            利用内存分页因此适合数据小但SQL语句复杂的查询
+            </summary>
+            <param name="PageIndex">当前页</param>
+            <param name="PageSize">分页大小</param>
+            <param name="DisplayField">字段列，每个字段用,分开</param>
+            <param name="TableName">表名，支持（） k 视图方式</param>
+            <param name="Where">查询条件，不带关键字WHERE</param>
+            <param name="OrderBy">排序语句，带order by</param>
+            <param name="GroupBy">GROUP BY 字段，不带关键字GROUP BY</param>
+            <param name="RecodeCount">返回总记录数</param>
+            <param name="PageCount">返回总记录数</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:NK.Interface.iTransaction.getDataTableByDB(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32@,System.Int32@)">
+            <summary>
+            利用数据库分页因此适合数据小但SQL语句复杂的查询
+            </summary>
+            <param name="PageIndex">当前页</param>
+            <param name="PageSize">分页大小</param>
+            <param name="DisplayField">字段列，每个字段用,分开</param>
+            <param name="TableName">表名，支持（） k 视图方式</param>
+            <param name="Where">查询条件，不带关键字WHERE</param>
+            <param name="OrderBy">排序语句，带order by</param>
+            <param name="OrderField">排序字段</param>
+            <param name="GroupBy">GROUP BY 字段，不带关键字GROUP BY</param>
+            <param name="RecodeCount">返回总记录数</param>
+            <param name="PageCount">返回总记录数</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:NK.Interface.iTransaction.Columns(System.String)">
+            <summary>
+            列出表字段
+            </summary>
+            <param name="TableName">表名</param>
+            <returns></returns>
+        </member>
+        <member name="M:NK.Interface.iTransaction.Transaction">
+            <summary>
+            启用实物
+            </summary>
+        </member>
+        <member name="M:NK.Interface.iTransaction.SaveChange(System.Boolean)">
+            <summary>
+            执行事务并完成事务，当出错后自动回滚。再次执行需要执行Transaction
+            </summary>
+        </member>
+        <member name="M:NK.Interface.iTransaction.Cancel">
+            <summary>
+            回滚后完成事务。再次执行需要执行Transaction
+            </summary>
+        </member>
+        <member name="E:NK.Interface.iTransaction.log">
+            <summary>
+            调试信息事件
+            </summary>
+        </member>
+        <member name="E:NK.Interface.iTransaction.HasError">
+            <summary>
+            错误出现事件，性能参数内DEBUG设置为EVENT有效
+            </summary>
+        </member>
+        <member name="E:NK.Interface.iTransaction.Connect">
+            <summary>
+            连接事件
+            </summary>
+        </member>
+        <member name="E:NK.Interface.iTransaction.DisConnect">
+            <summary>
+            连接断开
+            </summary>
+        </member>
+        <member name="T:LinqToDB.Mapping.ColumnAttributeEX">
+            <summary>
+             ColumnAttribute扩展类型
+            </summary>
+        </member>
+        <member name="M:LinqToDB.Mapping.ColumnAttributeEX.SupportedType(System.Type)">
+            <summary>
+            支持的类型
+            </summary>
+            <param name="t"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LinqToDB.Mapping.ColumnAttributeEX.DBType(LinqToDB.DataType,NK.ENum.DBType)">
+            <summary>
+            数据库类型
+            </summary>
+            <param name="type"></param>
+            <param name="DBMode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LinqToDB.Mapping.ColumnAttributeEX.ToSystemType(LinqToDB.DataType)">
+            <summary>
+            ColumnAttribute类中的DataType转TYPE
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LinqToDB.Mapping.ColumnAttributeEX.ToDataType(System.Type)">
+             <summary>
+            TYPE转 ColumnAttribute类中的DataType
+             </summary>
+             <param name="obj"></param>
+             <returns></returns>
+        </member>
+        <member name="M:LinqToDB.Mapping.ColumnAttributeEX.DBDate(System.DateTime,NK.ENum.DBType)">
+            <summary>
+            数据库日期类型
+            </summary>
+            <param name="DT"></param>
+            <param name="DBMode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LinqToDB.Mapping.ColumnAttributeEX.DBClob(System.String,System.Object,NK.ENum.DBType,System.String@)">
+            <summary>
+            数据库BLOB类型
+            </summary>
+            <param name="Key"></param>
+            <param name="val"></param>
+            <param name="DBMode"></param>
+            <param name="PName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LinqToDB.Mapping.ColumnAttributeEX.DBDataType(LinqToDB.DataType,NK.ENum.DBType)">
+            <summary>
+            数据类型转换
+            </summary>
+            <param name="type"></param>
+            <param name="DBMode"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6C9AD91B-2953-44A9-A05F-1E720EEF76ED}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OSAPI</RootNamespace>
+    <AssemblyName>OSAPI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="API\Hid.cs" />
+    <Compile Include="API\Kernel32.cs" />
+    <Compile Include="API\SetupApi.cs" />
+    <Compile Include="API\User32.cs" />
+    <Compile Include="Enum\ACLineStatus.cs" />
+    <Compile Include="Enum\BatteryFlag.cs" />
+    <Compile Include="Enum\ChangeDisplaySettingsFlags.cs" />
+    <Compile Include="Enum\CreationDisposition.cs" />
+    <Compile Include="Enum\DesiredAccess.cs" />
+    <Compile Include="Enum\DIGCF.cs" />
+    <Compile Include="Enum\DM.cs" />
+    <Compile Include="Enum\EWX.cs" />
+    <Compile Include="Enum\FlagsAndAttributes.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="struct\DEVMODE.cs" />
+    <Compile Include="struct\DEV_BROADCAST_DEVICEINTERFACE.cs" />
+    <Compile Include="struct\DEV_BROADCAST_HDR.cs" />
+    <Compile Include="struct\HIDD_ATTRIBUTES.cs" />
+    <Compile Include="struct\HIDP_CAPS.cs" />
+    <Compile Include="struct\MEMORYSTATUS.cs" />
+    <Compile Include="struct\POINTL.cs" />
+    <Compile Include="struct\SP_DEVICE_INTERFACE_DATA.cs" />
+    <Compile Include="struct\SP_DEVICE_INTERFACE_DETAIL_DATA.cs" />
+    <Compile Include="struct\SP_DEVINFO_DATA.cs" />
+    <Compile Include="struct\SYSTEMTIME.cs" />
+    <Compile Include="struct\SYSTEM_POWER_STATUS.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

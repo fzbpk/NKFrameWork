@@ -1,0 +1,4 @@
+J:\Project\DotNet\NKFrameWork\OSAPI\bin\Debug\OSAPI.dll
+J:\Project\DotNet\NKFrameWork\OSAPI\bin\Debug\OSAPI.pdb
+J:\Project\DotNet\NKFrameWork\OSAPI\obj\Debug\OSAPI.dll
+J:\Project\DotNet\NKFrameWork\OSAPI\obj\Debug\OSAPI.pdb
